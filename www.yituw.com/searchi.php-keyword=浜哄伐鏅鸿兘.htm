@@ -1,0 +1,2308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta name="Generator" content="ECSHOP v3.6.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        
+        <title>亿图视觉图片搜索</title>
+        <link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css">
+
+        <link rel="shortcut icon" href="favicon.ico" tppabs="http://www.yituw.com/favicon.ico" />
+        <link rel="icon" href="animated_favicon.gif.css" tppabs="http://www.yituw.com/animated_favicon.gif" type="image/gif" />
+        <script type="text/javascript" src="js/common.js" tppabs="http://www.yituw.com/js/common.js"></script><script type="text/javascript" src="js/transport.js" tppabs="http://www.yituw.com/js/transport.js"></script><script type="text/javascript" src="js/utils.js" tppabs="http://www.yituw.com/js/utils.js"></script>        <style type="text/css">.imgListInit {
+            height: 0;
+            overflow: hidden;
+            }
+            .imgList {
+            font-size: 0;
+            letter-spacing: -3px;
+            line-height: 0;
+            margin: 0 auto;
+            }
+            .imgList .imgItem {
+            border: 1px solid #ebebeb;
+            box-sizing: border-box;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            }
+            .imgList .imgItem .icon-down {
+            margin-left: 10px;
+            }
+            .imgList .imgItem a {
+            display: inline-block;
+            text-decoration: none;
+            }
+            .imgList .imgItem a img {
+            display: inline-block;
+            height: auto;
+            }
+            .imgItem {
+            display: inline-block;
+            position: relative;
+            z-index: 0;
+            }
+            #nopic {
+            display: none;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            }</style>
+    </head>
+    <body>
+        <div class="loader" style="z-index: 198910151;display: none">
+</div>  
+<div class="header header_black header_w">
+  <div class="wrapper" style="width: auto;margin: 0 70px;">
+    <div class="logo">
+                      
+                        <a href="index.htm" tppabs="http://www.yituw.com/"><img class="logo-normal" src="themes/meisu2017/imgs/logo1.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/logo1.png"/></a>
+
+                      
+    </div>
+    <div class="copyr">
+        <a href="index.htm" tppabs="http://www.yituw.com/">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="http://copyright.meisupic.com">版权登记</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a href="topic.php.htm" tppabs="http://www.yituw.com/topic.php">精选专辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="dci.php">DCI专区</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.php?action=price&from=top"><font color="#FC4349">新手套餐</font><i class="huodong_top_hot"></i></a>-->
+    </div>
+<font id="ECS_MEMBERZONE"><div id="append_parent"></div>
+ 
+<div class="nav_af">
+<ul>
+<!-- <li class='le le1'><a href="about.php?action=price">套餐价格</a></li> -->
+        <li class='le le2'><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></li>
+        <li class='le le3'><a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">购物车</a></li>
+        <li class="le le4">
+        <a href="user.php.htm" tppabs="http://www.yituw.com/user.php" class='mail'>cesh...</a>
+                    <span class='arr'></span>
+                    <div class="hdn">
+                        <dl>
+                            <dd><a href="user.php-act=order_list.htm" tppabs="http://www.yituw.com/user.php?act=order_list">我的订单</a></dd>
+                            <dd><a href="user.php-act=package.htm" tppabs="http://www.yituw.com/user.php?act=package">我的套餐</a></dd>
+                            <dd><a href="user.php-act=down_list.htm" tppabs="http://www.yituw.com/user.php?act=down_list">下载记录</a></dd>
+                            <dd><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></dd>
+                            <dd><a href="user.php-act=history_list.htm" tppabs="http://www.yituw.com/user.php?act=history_list">我的足迹</a></dd>
+                            <!--
+                            <dd><a href="user.php?act=notice">系统通知</a></dd>
+                            -->
+                            <dd><a href="user.php-act=profile.htm" tppabs="http://www.yituw.com/user.php?act=profile">账户管理</a></dd>
+                            <dd><a href="user.php-act=logout.htm" tppabs="http://www.yituw.com/user.php?act=logout" class='last'>退出</a></dd>
+                        </dl>
+                    </div>
+        </li>
+</ul>
+</div>
+ </font>
+  </div>
+</div>        <div class="toper toper_w">
+            <div class="wrapper">
+                <h2>"人工智能"</h2><span style='font-size: 14px;line-height: 103px;padding-left: 7px;'>共 191083 个搜索结果</span>
+                <div class="form">
+                    <form action="http://www.yituw.com/searchi.php" method="get" id="myform">
+                        <input class="s_clearall" type="hidden" value='人工智能' name="s_keyword" id="s_keyword" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='1' name="offset" id="s_offset" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='4' name="sort" id="s_sort" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="phototype" id="s_phototype" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="orientation" id="s_orientation" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='' name="people_only" id="s_people_only" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="race" id="s_race" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="age" id="s_age" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="gender" id="s_gender" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="quantity" id="s_quantity" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='' name="color" id="s_color" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='' name="categories" id="s_categories" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="username" id="s_username" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="exclude_keyword" id="s_exclude_keyword" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="image_url" id="image_url" autocomplete="off">
+                        <div class="type">
+                            <!--<h4>全部图片</h4>-->
+                            <div class="bt">
+                                <i class="n1"></i>
+                                <i class="n2"></i>
+                            </div>
+                            <select class="dropdown" onchange="changeSearch('phototypesearch',this.options[this.options.selectedIndex].value)">
+                                <option value=""  class="label">全部图片</option>
+                                <option value="" class="label">全部图片</option>
+                                <option value="photo">照片</option>
+                                <option value="vector" >矢量图</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="txt" placeholder="输入关键词" name="keyword" id="keyword" value="人工智能"  autocomplete="off"/>
+                            <input class="btn" value="" onclick="submitForm()" type="submit" />
+                                                    </div>
+                        <div id="srch_img" class="srch_img"> </div>
+                    </form>
+                    <!-- <div id="srch_img" class="srch_img"> </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="srch_head">
+            <div class="srch_head_l  srch_head_l1">
+                <ul>
+
+                    <li  class="selected" >
+                    <div class="label">
+                        <a href="javascript:changeSearch('sort',4)">热门</a>
+                    </div>
+                </li>
+                <li >
+                <div class="label">
+                    <a href="javascript:changeSearch('sort',5)">最新</a>
+                </div>
+            </li>
+        </ul>
+        <div class="f-line">
+
+        </div>
+    </div>
+    <div class="srch_head_l srch_head_l2">
+        <ul>
+            <li>
+                <select class="dropdown" id="phototype">
+                    <option value=""  class="label">全部图片</option>
+                    <option value="" class="label">全部图片</option>
+                    <option value="photo">照片</option>
+                    <option value="vector" >矢量图</option>
+                </select>
+            </li>
+            <li class="n2">
+                <select class="dropdown" id="orientation">
+                    <option value="" class="label">方向</option>
+                    <option value="" class="label">不限</option>
+                    <option value="horizontal">横向</option>
+                    <option value="vertical" >纵向</option>
+                    <option value="square" >正方</option>
+                </select>
+            </li>
+            <li>
+                <div class="tit">
+                    <span>人物</span>
+                    <i></i>
+                </div>
+                <div class="con con_user" style="display: none;">
+                    <div class="con_user_h">
+                        <div class="l">
+
+                            <input type="checkbox" name="people_only" id="people_only" value="1" onchange="javascript:changeSearch('people_only')" />
+                            <label for="people_only"></label>
+                            仅看有人物的
+                        </div>
+                        <div class="r">
+                            清除所选
+                        </div>
+                    </div>
+                    <div class="con_user_b">
+                        <dl>
+                            <dt>种族</dt>
+                            <dd><a href="javascript:changeSearch('race','asian')">亚洲人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','multi')">白人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','black')">黑人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','caucasian')">中东人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','brazilian')">巴西人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','other')">其他</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd><a href="javascript:changeSearch('age','infant')">婴儿</a></dd>
+                            <dd><a href="javascript:changeSearch('age','child')">儿童</a></dd>
+                            <dd><a href="javascript:changeSearch('age','teenager')">青少年</a></dd>
+                            <dd><a href="javascript:changeSearch('age','70')">老人</a></dd>
+                            <dd><a href="javascript:changeSearch('age','20')">20+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','30')">30+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','40')">40+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','50')">50+</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>性别</dt>
+                            <dd><a href="javascript:changeSearch('gender','male')">男性</a></dd>
+                            <dd><a href="javascript:changeSearch('gender','female')">女性</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>数量</dt>
+                            <dd onclick="javascript:changeSearch('quantity','1')"><a href="javascript:changeSearch('quantity','1')">1</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','2')"><a href="javascript:changeSearch('quantity','2')">2</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','3')"><a href="javascript:changeSearch('quantity','3')">3</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','any')"><a href="javascript:changeSearch('quantity','any')">4+</a></dd>
+                        </dl>
+                        <div class="btn">
+                            <input class="ui_btn" name="" id="" value="提交" onclick="submitForm()"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="tit">
+                    <span>色彩</span>
+                    <i></i>
+                </div>
+                <div class="con con_color" style="display: none;">
+                    <dl>
+                        <dt><img src="themes/meisu2017/imgs/dxm2.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/dxm2.png"/></dt>
+                        <dd><span style="background-color: #000000;" onclick="javascript:changeSearch('color','#000000')"></span></dd>
+                        <dd><span style="background-color: #ffffff;" onclick="javascript:changeSearch('color','#ffffff')"></span></dd>
+                        <dd><span style="background-color: #7a7a7a;" onclick="javascript:changeSearch('color','#7a7a7a')"></span></dd>
+                        <dd><span style="background-color: #bfbfbf;" onclick="javascript:changeSearch('color','#bfbfbf')"></span></dd>
+                        <dd><span style="background-color: #810081;" onclick="javascript:changeSearch('color','#810081')"></span></dd>
+                        <dd><span style="background-color: #ff01ff;" onclick="javascript:changeSearch('color','#ff01ff')"></span></dd>
+                        <dd><span style="background-color: #653201;" onclick="javascript:changeSearch('color','#653201')"></span></dd>
+                        <dd><span style="background-color: #7e0004;" onclick="javascript:changeSearch('color','#7e0004')"></span></dd>
+                        <dd><span style="background-color: #fe0000;" onclick="javascript:changeSearch('color','#fe0000')"></span></dd>
+                        <dd><span style="background-color: #fecd9b;" onclick="javascript:changeSearch('color','#fecd9b')"></span></dd>
+                        <dd><span style="background-color: #f9be00;" onclick="javascript:changeSearch('color','#f9be00')"></span></dd>
+                        <dd><span style="background-color: #ffff00;" onclick="javascript:changeSearch('color','#ffff00')"></span></dd>
+                        <dd><span style="background-color: #04fe00;" onclick="javascript:changeSearch('color','#04fe00')"></span></dd>
+                        <dd><span style="background-color: #027f00;" onclick="javascript:changeSearch('color','#027f00')"></span></dd>
+                        <dd><span style="background-color: #01ffff;" onclick="javascript:changeSearch('color','#01ffff')"></span></dd>
+                        <dd><span style="background-color: #0005fd;" onclick="javascript:changeSearch('color','#0005fd')"></span></dd>
+                        <dd><span style="background-color: #00007c;" onclick="javascript:changeSearch('color','#00007c')"></span></dd>
+
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <div class="tit tit_more">
+                    <span>更多条件</span>
+                    <i></i>
+                </div>
+                <div class="con con_more" style="display: none;">
+                    <dl>
+                        <dd>
+                            <label>类别</label>
+                            <select class="dropdown" onchange="changeSearch('categories',this.options[this.options.selectedIndex].value)">
+                                                                <option value="6">抽象</option>
+                                                                <option value="7">动物</option>
+                                                                <option value="8">房屋建筑</option>
+                                                                <option value="9">艺术品</option>
+                                                                <option value="10">美丽和时尚</option>
+                                                                <option value="11">商业/金融</option>
+                                                                <option value="12">名人</option>
+                                                                <option value="13">城市</option>
+                                                                <option value="14">电脑/电子产品</option>
+                                                                <option value="15">概念/观点</option>
+                                                                <option value="16">装饰</option>
+                                                                <option value="17">教育</option>
+                                                                <option value="18">动物&植物 </option>
+                                                                <option value="19">饮食</option>
+                                                                <option value="20">节日/事件</option>
+                                                                <option value="21">插图</option>
+                                                                <option value="22">工业</option>
+                                                                <option value="23">室内装饰</option>
+                                                                <option value="24">首饰/宝石</option>
+                                                                <option value="25">医疗和健康</option>
+                                                                <option value="26">杂项</option>
+                                                                <option value="27">物体</option>
+                                                                <option value="28">其它</option>
+                                                                <option value="29">人物</option>
+                                                                <option value="30">地方</option>
+                                                                <option value="31">宗教</option>
+                                                                <option value="32">科学</option>
+                                                                <option value="33">购物</option>
+                                                                <option value="34">符号及标志</option>
+                                                                <option value="35">运动</option>
+                                                                <option value="36">科技</option>
+                                                                <option value="37">纹理和背景</option>
+                                                                <option value="38">工具</option>
+                                                                <option value="39">运输及车辆</option>
+                                                                <option value="41">复古与怀旧</option>
+                                                                <option value="42">大自然</option>
+                                                                <option value="43">旅游</option>
+                                                                <option value="44">职业</option>
+                                                            </select>
+                        </dd>
+                        <dd>
+                            <label>
+                                <div class="wrap">
+                                    <em class="em1"></em>
+                                    <div class="wrap_txt">
+                                        <i class="i1"></i>
+                                        <p class="p1">通过输入用户名或昵称，您可以快速找到您关注的供稿人（如果此信息在供稿人的公开档案中）</p>
+                                        <p class="p2 mt10">示例说明：</p>
+                                        <p class="p2 mt10">输入用户名“Limiesuser”或者昵称“李亿图视觉”，将会获得供稿人“Limiesuser
+                                            /李亿图视觉”的供稿专辑链接，点击链接可以直接查看该供稿人的所有作品文件
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <div class="hd">
+                                                    Limeisuser <span>|</span>
+                                                </div>
+                                                <div class="bd">
+                                                    <div class="img">
+                                                        <img src="themes/meisu2017/imgs/img79.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img79.jpg"/>
+                                                    </div>
+                                                    <div class="tx">
+                                                        <h4>Limeisuser  /  李亿图视觉</h4>
+                                                        <h4>作品  18926</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h6>  或</h6>
+                                            </li>
+                                            <li>
+                                                <div class="hd">
+                                                    Limeisuser <span>|</span>
+                                                </div>
+                                                <div class="bd">
+                                                    <div class="img">
+                                                        <img src="themes/meisu2017/imgs/img79.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img79.jpg"/>
+                                                    </div>
+                                                    <div class="tx">
+                                                        <h4>Limeisuser  /  李亿图视觉</h4>
+                                                        <h4>作品  18926</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                供稿人</label>
+                            <input type="text" name="username" id="username" class="txt" value="" placeholder="请输入供稿人名称" />
+                            <em class="em_img" style="display: none;"></em>
+
+                        </dd>
+                        <dd>
+                            <label>
+                                <div class="wrap">
+                                    <em class="em2"></em>
+                                    <div class="wrap_txt">
+                                        <i class="i2"></i>
+                                        <p class="p1">排除关键字可以帮您更精准的定位搜索结果</p>
+                                        <p class="p1">使用逗号、分号或空格将多个关键字或者词语分开</p>
+                                        <p class="p1 mt10">示例说明：</p>
+                                        <p class="p2 mt10">在搜索框内输入“科技”，在排除关键字框内输入“电脑”，
+                                            搜索结果中就会出现带有关键字“科技”
+                                            但是不带关键字“电脑”的图片或素材
+                                        </p>
+                                        <p class="p1 mt10">输入样式举例：</p>
+                                        <p class="p2 mt10">电脑   书桌    水杯</p>
+                                        <p class="p2">电脑   书桌    水杯</p>
+                                        <p class="p2">电脑   书桌    水杯</p>
+                                    </div>
+                                </div>
+
+                                排除关键字</label>
+                            <input type="text" name="exclude_keyword" class="txt" id="exclude_keyword" value="" placeholder="多个关键字可用空格分开" />
+                            <em class="em_img" style="display: none;"></em>
+
+
+                        </dd>
+                    </dl>
+                    <div class="btn">
+                        <input class="ui_btn" name="" id="" value="提交" onclick="submitForm()" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="srch_head_r">
+        <label>共1911页</label>
+        <ul>
+                        <li class="prev"><a href="javascript:void(0)"></a></li>
+                        <li><input type="text" class="sr" name="pagenowt" id="pagenowt" value="1" />
+            <li class="next"><a href="javascript:submitFormNextPage(2)"></a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="label_wrap">
+<dl>
+    </dl>
+</div>
+        <div class="search_content">
+<div class="wrapper1">
+
+    <div id="searchCon2" class="imgs ui_imgs">
+        <ul class="imgList" id="goods-img-list">
+
+                                    <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10142532" title="Mind Over Digit">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10142532" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1014/10142532/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10142532  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10142532%27" tppabs="http://www.yituw.com/goods.php?media_id=10142532" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1014/10142532/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="196">
+                <div class="cover ui_cover" >
+                    <dl sn="144709511" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144709511" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709511/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144709511  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144709511%27" tppabs="http://www.yituw.com/goods.php?media_id=144709511" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709511/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="360">
+                <div class="cover ui_cover" >
+                    <dl sn="95045118" title="Replacement of humans by machines">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=95045118" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2731675/image/9504/95045118/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=95045118  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=95045118%27" tppabs="http://www.yituw.com/goods.php?media_id=95045118" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2731675/image/9504/95045118/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10563529" title="Mind Over Number">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10563529" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1056/10563529/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10563529  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10563529%27" tppabs="http://www.yituw.com/goods.php?media_id=10563529" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1056/10563529/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="256">
+                <div class="cover ui_cover" >
+                    <dl sn="146165997" title="AI text with businessman">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=146165997" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1350793/image/14616/146165997/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=146165997  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=146165997%27" tppabs="http://www.yituw.com/goods.php?media_id=146165997" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1350793/image/14616/146165997/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144709683" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144709683" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709683/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144709683  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144709683%27" tppabs="http://www.yituw.com/goods.php?media_id=144709683" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709683/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="104460806" title="Creative brain concept with human silhouette">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=104460806" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1035451/vector/10446/104460806/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=104460806  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=104460806%27" tppabs="http://www.yituw.com/goods.php?media_id=104460806" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1035451/vector/10446/104460806/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="99285096" title="Human and Robot hands in handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=99285096" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/9928/99285096/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=99285096  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=99285096%27" tppabs="http://www.yituw.com/goods.php?media_id=99285096" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/9928/99285096/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="218">
+                <div class="cover ui_cover" >
+                    <dl sn="192739794" title="White woman humanoid using digital globe hud interface 3D render">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=192739794" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1008648/image/19273/192739794/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=192739794  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=192739794%27" tppabs="http://www.yituw.com/goods.php?media_id=192739794" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1008648/image/19273/192739794/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144710581" title="Artificial intelligence technologies concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144710581" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710581/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144710581  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144710581%27" tppabs="http://www.yituw.com/goods.php?media_id=144710581" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710581/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="71500265" title="Woman Playing Chess with Robot">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71500265" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500265/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71500265  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71500265%27" tppabs="http://www.yituw.com/goods.php?media_id=71500265" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500265/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="375">
+                <div class="cover ui_cover" >
+                    <dl sn="95137986" title="Replacement of humans by machines">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=95137986" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2731675/image/9513/95137986/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=95137986  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=95137986%27" tppabs="http://www.yituw.com/goods.php?media_id=95137986" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2731675/image/9513/95137986/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="299">
+                <div class="cover ui_cover" >
+                    <dl sn="71858741" title="Artificial intelligenc and human brain">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71858741" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1155256/image/7185/71858741/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71858741  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71858741%27" tppabs="http://www.yituw.com/goods.php?media_id=71858741" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1155256/image/7185/71858741/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="6283301" title="Conceptual background- Artificial intelligence / humans and cybe">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=6283301" target="_blank"><img class="lazyload" data-original="http://static6.yituw.com/thumbs/1015682/image/628/6283301/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=6283301  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=6283301%27" tppabs="http://www.yituw.com/goods.php?media_id=6283301" target="_blank"><img class="lazy" data-original="http://static6.yituw.com/thumbs/1015682/image/628/6283301/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="250">
+                <div class="cover ui_cover" >
+                    <dl sn="207844888" title="Digital artificial intelligence text hologram on blue grey background 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=207844888" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/20784/207844888/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=207844888  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=207844888%27" tppabs="http://www.yituw.com/goods.php?media_id=207844888" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/20784/207844888/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="253">
+                <div class="cover ui_cover" >
+                    <dl sn="96673142" title="Cyborg Woman - Humanoid">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=96673142" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1329867/image/9667/96673142/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=96673142  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=96673142%27" tppabs="http://www.yituw.com/goods.php?media_id=96673142" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1329867/image/9667/96673142/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="318">
+                <div class="cover ui_cover" >
+                    <dl sn="110120228" title="Artificial Intelligence (AI) infographic vector illustration">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=110120228" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/7110532/vector/11012/110120228/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=110120228  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=110120228%27" tppabs="http://www.yituw.com/goods.php?media_id=110120228" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/7110532/vector/11012/110120228/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="8423661" title="Numbers of the Mind">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=8423661" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/842/8423661/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=8423661  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=8423661%27" tppabs="http://www.yituw.com/goods.php?media_id=8423661" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/842/8423661/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144709993" title="Artificial intelligence technologies concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144709993" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709993/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144709993  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144709993%27" tppabs="http://www.yituw.com/goods.php?media_id=144709993" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709993/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="196">
+                <div class="cover ui_cover" >
+                    <dl sn="144712305" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144712305" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144712305/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144712305  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144712305%27" tppabs="http://www.yituw.com/goods.php?media_id=144712305" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144712305/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="79716504" title="Waves of Reason">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=79716504" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1025323/image/7971/79716504/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=79716504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=79716504%27" tppabs="http://www.yituw.com/goods.php?media_id=79716504" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1025323/image/7971/79716504/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="71503555" title="Female human and robot's handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71503555" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503555/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71503555  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71503555%27" tppabs="http://www.yituw.com/goods.php?media_id=71503555" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503555/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144711255" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144711255" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144711255/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144711255  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144711255%27" tppabs="http://www.yituw.com/goods.php?media_id=144711255" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144711255/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="227010482" title="futuristic silver cyborg touching "artificial intelligence" lettering on grey with digital data">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=227010482" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/13193658/image/22701/227010482/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=227010482  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=227010482%27" tppabs="http://www.yituw.com/goods.php?media_id=227010482" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/13193658/image/22701/227010482/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="71714115" title="Neon brain. Cpu. Circuit board. Vector illustration. Eps 10">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71714115" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3205185/vector/7171/71714115/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71714115  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71714115%27" tppabs="http://www.yituw.com/goods.php?media_id=71714115" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/3205185/vector/7171/71714115/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="71503725" title="Business Human and Robot hands in handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71503725" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503725/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71503725  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71503725%27" tppabs="http://www.yituw.com/goods.php?media_id=71503725" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503725/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="102205474" title="artificial intelligence robot pretending to be human">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=102205474" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/4323461/vector/10220/102205474/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=102205474  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=102205474%27" tppabs="http://www.yituw.com/goods.php?media_id=102205474" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/4323461/vector/10220/102205474/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="218">
+                <div class="cover ui_cover" >
+                    <dl sn="199948198" title="White cyborg finger about to touch human finger on dark background 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=199948198" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/19994/199948198/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=199948198  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=199948198%27" tppabs="http://www.yituw.com/goods.php?media_id=199948198" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/19994/199948198/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="99285090" title="robotic mechanical arm">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=99285090" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/9928/99285090/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=99285090  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=99285090%27" tppabs="http://www.yituw.com/goods.php?media_id=99285090" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/9928/99285090/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="90665528" title="3D illuminated distorted sphere of glowing particles and wirefra">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=90665528" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2711989/vector/9066/90665528/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=90665528  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=90665528%27" tppabs="http://www.yituw.com/goods.php?media_id=90665528" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2711989/vector/9066/90665528/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="153">
+                <div class="cover ui_cover" >
+                    <dl sn="191034916" title="Cyborg head using artificial intelligence to create digital inte">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=191034916" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1008648/image/19103/191034916/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=191034916  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=191034916%27" tppabs="http://www.yituw.com/goods.php?media_id=191034916" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1008648/image/19103/191034916/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="2723884" title="Artificial intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=2723884" target="_blank"><img class="lazyload" data-original="http://static4.yituw.com/thumbs/1005669/image/272/2723884/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=2723884  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=2723884%27" tppabs="http://www.yituw.com/goods.php?media_id=2723884" target="_blank"><img class="lazy" data-original="http://static4.yituw.com/thumbs/1005669/image/272/2723884/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="298">
+                <div class="cover ui_cover" >
+                    <dl sn="43428815" title="Artificial intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=43428815" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/2471189/image/4342/43428815/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=43428815  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=43428815%27" tppabs="http://www.yituw.com/goods.php?media_id=43428815" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/2471189/image/4342/43428815/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="21846465" title="Futuristic Abstract Blue Modern Lines Background.Vector Illustration">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=21846465" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1004573/vector/2184/21846465/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=21846465  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=21846465%27" tppabs="http://www.yituw.com/goods.php?media_id=21846465" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1004573/vector/2184/21846465/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="191578930" title="cropped shot of robot working with laptop on wooden surface">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=191578930" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578930/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=191578930  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=191578930%27" tppabs="http://www.yituw.com/goods.php?media_id=191578930" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578930/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="195745476" title="Artificial intelligence (AI)">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=195745476" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/19574/195745476/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=195745476  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=195745476%27" tppabs="http://www.yituw.com/goods.php?media_id=195745476" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/19574/195745476/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="11840612" title="Number Propagation">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=11840612" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1025323/image/1184/11840612/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=11840612  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=11840612%27" tppabs="http://www.yituw.com/goods.php?media_id=11840612" target="_blank"><img class="lazy" data-original="http://static9.yituw.com/thumbs/1025323/image/1184/11840612/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="384">
+                <div class="cover ui_cover" >
+                    <dl sn="83472010" title="Artificial intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=83472010" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1004583/image/8347/83472010/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=83472010  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=83472010%27" tppabs="http://www.yituw.com/goods.php?media_id=83472010" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1004583/image/8347/83472010/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10142429" title="Sight of technology">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10142429" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1014/10142429/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10142429  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10142429%27" tppabs="http://www.yituw.com/goods.php?media_id=10142429" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1014/10142429/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10491323" title="Brain processor">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10491323" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1049/10491323/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10491323  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10491323%27" tppabs="http://www.yituw.com/goods.php?media_id=10491323" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1049/10491323/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="491">
+                <div class="cover ui_cover" >
+                    <dl sn="107452604" title="Creative brain concept background">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=107452604" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1035451/vector/10745/107452604/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=107452604  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=107452604%27" tppabs="http://www.yituw.com/goods.php?media_id=107452604" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1035451/vector/10745/107452604/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="71503571" title="Female human and robot's handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71503571" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503571/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71503571  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71503571%27" tppabs="http://www.yituw.com/goods.php?media_id=71503571" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503571/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="82798682" title="Acceleration of Connection">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=82798682" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1025323/image/8279/82798682/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=82798682  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=82798682%27" tppabs="http://www.yituw.com/goods.php?media_id=82798682" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1025323/image/8279/82798682/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10362426" title="Fractal vision background">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10362426" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1036/10362426/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10362426  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10362426%27" tppabs="http://www.yituw.com/goods.php?media_id=10362426" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1036/10362426/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="71503519" title="Female human and robot's handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71503519" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503519/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71503519  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71503519%27" tppabs="http://www.yituw.com/goods.php?media_id=71503519" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503519/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="318">
+                <div class="cover ui_cover" >
+                    <dl sn="105771722" title="Smart machine learning vector icon set. Symbols for emotions, decision, network, problem solving, pattern, analysis, performance, priority, interaction, big data, algorithm, sensor.">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=105771722" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/7110532/vector/10577/105771722/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=105771722  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=105771722%27" tppabs="http://www.yituw.com/goods.php?media_id=105771722" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/7110532/vector/10577/105771722/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="76509883" title="Lights of Thought Network">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=76509883" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1025323/image/7650/76509883/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=76509883  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=76509883%27" tppabs="http://www.yituw.com/goods.php?media_id=76509883" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1025323/image/7650/76509883/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="103426364" title="Artificial Intelligence Concept Composition">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=103426364" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2885805/vector/10342/103426364/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=103426364  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=103426364%27" tppabs="http://www.yituw.com/goods.php?media_id=103426364" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2885805/vector/10342/103426364/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10562944" title="Lights of ideas">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10562944" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1056/10562944/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10562944  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10562944%27" tppabs="http://www.yituw.com/goods.php?media_id=10562944" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1056/10562944/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="99595864" title="Neon brain. Cpu. Circuit board. Abstract technology background. Vector illustration. Eps 10">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=99595864" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3205185/vector/9959/99595864/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=99595864  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=99595864%27" tppabs="http://www.yituw.com/goods.php?media_id=99595864" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/3205185/vector/9959/99595864/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="466">
+                <div class="cover ui_cover" >
+                    <dl sn="87219232" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=87219232" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1157310/vector/8721/87219232/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=87219232  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=87219232%27" tppabs="http://www.yituw.com/goods.php?media_id=87219232" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1157310/vector/8721/87219232/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="103424352" title="Artificial Intelligence Icons Set">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=103424352" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2885805/vector/10342/103424352/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=103424352  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=103424352%27" tppabs="http://www.yituw.com/goods.php?media_id=103424352" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2885805/vector/10342/103424352/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="250">
+                <div class="cover ui_cover" >
+                    <dl sn="198926534" title="Digital artificial intelligence text hologram on blue background 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=198926534" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/19892/198926534/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=198926534  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=198926534%27" tppabs="http://www.yituw.com/goods.php?media_id=198926534" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/19892/198926534/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="46966799" title="Artificial Intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=46966799" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1025323/image/4696/46966799/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=46966799  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=46966799%27" tppabs="http://www.yituw.com/goods.php?media_id=46966799" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1025323/image/4696/46966799/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="245">
+                <div class="cover ui_cover" >
+                    <dl sn="202866380" title="Businessman on blurred background using digital artificial intelligence icon hologram 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=202866380" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/20286/202866380/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=202866380  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=202866380%27" tppabs="http://www.yituw.com/goods.php?media_id=202866380" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/20286/202866380/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="134370134" title="Artificial Intelligence Flowchart ">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=134370134" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/2885805/vector/13437/134370134/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=134370134  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=134370134%27" tppabs="http://www.yituw.com/goods.php?media_id=134370134" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/2885805/vector/13437/134370134/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="21846411" title="Futuristic Abstract Blue Modern Lines Background.Vector Illustration">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=21846411" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1004573/vector/2184/21846411/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=21846411  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=21846411%27" tppabs="http://www.yituw.com/goods.php?media_id=21846411" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1004573/vector/2184/21846411/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="191578908" title="cropped shot of robot playing chess with human on wooden tabletop">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=191578908" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578908/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=191578908  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=191578908%27" tppabs="http://www.yituw.com/goods.php?media_id=191578908" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578908/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="227009366" title="close-up view of robotic hands with digital data isolated on grey, future technology concept ">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=227009366" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/13193658/image/22700/227009366/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=227009366  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=227009366%27" tppabs="http://www.yituw.com/goods.php?media_id=227009366" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/13193658/image/22700/227009366/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="111704664" title="Artificial Intelligence Flat Icon Set">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=111704664" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2535571/vector/11170/111704664/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=111704664  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=111704664%27" tppabs="http://www.yituw.com/goods.php?media_id=111704664" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2535571/vector/11170/111704664/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="8538468" title="Digital Thinking">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=8538468" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/853/8538468/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=8538468  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=8538468%27" tppabs="http://www.yituw.com/goods.php?media_id=8538468" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/853/8538468/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="71500281" title="Woman Playing Chess with Robot">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71500281" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500281/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71500281  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71500281%27" tppabs="http://www.yituw.com/goods.php?media_id=71500281" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500281/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144709453" title="Artificial intelligence (AI) technologies concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144709453" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709453/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144709453  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144709453%27" tppabs="http://www.yituw.com/goods.php?media_id=144709453" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14470/144709453/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="196">
+                <div class="cover ui_cover" >
+                    <dl sn="144710191" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144710191" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710191/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144710191  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144710191%27" tppabs="http://www.yituw.com/goods.php?media_id=144710191" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710191/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="167004874" title="Businessman using smartphone with fintech infographic icon virtual screen . Hi-tech business concept .">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=167004874" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/7677414/image/16700/167004874/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=167004874  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=167004874%27" tppabs="http://www.yituw.com/goods.php?media_id=167004874" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/7677414/image/16700/167004874/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="90291142" title="Aloha label with exotic frangipani flowers on watercolor background">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=90291142" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2711989/vector/9029/90291142/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=90291142  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=90291142%27" tppabs="http://www.yituw.com/goods.php?media_id=90291142" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2711989/vector/9029/90291142/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="231">
+                <div class="cover ui_cover" >
+                    <dl sn="180880934" title="Artificial intelligence concept - Internet, network, globalizati">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=180880934" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1018174/image/18088/180880934/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=180880934  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=180880934%27" tppabs="http://www.yituw.com/goods.php?media_id=180880934" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1018174/image/18088/180880934/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="283">
+                <div class="cover ui_cover" >
+                    <dl sn="67785101" title="Abstract digital brain, technology concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=67785101" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1035451/vector/6778/67785101/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=67785101  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=67785101%27" tppabs="http://www.yituw.com/goods.php?media_id=67785101" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1035451/vector/6778/67785101/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="51226755" title="Connection between people and technology">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=51226755" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1813545/image/5122/51226755/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=51226755  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=51226755%27" tppabs="http://www.yituw.com/goods.php?media_id=51226755" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1813545/image/5122/51226755/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="144711617" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144711617" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144711617/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144711617  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144711617%27" tppabs="http://www.yituw.com/goods.php?media_id=144711617" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144711617/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="106049884" title="low poly portrait of smart woman">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=106049884" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1030956/vector/10604/106049884/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=106049884  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=106049884%27" tppabs="http://www.yituw.com/goods.php?media_id=106049884" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1030956/vector/10604/106049884/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="191578996" title="cropped shot of robot working with laptop on wooden surface with business contract">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=191578996" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578996/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=191578996  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=191578996%27" tppabs="http://www.yituw.com/goods.php?media_id=191578996" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/13194036/image/19157/191578996/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="288">
+                <div class="cover ui_cover" >
+                    <dl sn="163989470" title="Artificial Intelligence Automation Infographic Background">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=163989470" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1019970/image/16398/163989470/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=163989470  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=163989470%27" tppabs="http://www.yituw.com/goods.php?media_id=163989470" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1019970/image/16398/163989470/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="28959027" title="Visualization of Circuit Intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=28959027" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1025323/image/2895/28959027/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=28959027  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=28959027%27" tppabs="http://www.yituw.com/goods.php?media_id=28959027" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1025323/image/2895/28959027/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="196">
+                <div class="cover ui_cover" >
+                    <dl sn="142114734" title="Modern technologies concepts">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=142114734" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14211/142114734/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=142114734  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=142114734%27" tppabs="http://www.yituw.com/goods.php?media_id=142114734" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14211/142114734/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="153">
+                <div class="cover ui_cover" >
+                    <dl sn="243619924" title="Robotic man cyborg face representing artificial intelligence concept 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=243619924" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/24361/243619924/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=243619924  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=243619924%27" tppabs="http://www.yituw.com/goods.php?media_id=243619924" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/24361/243619924/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="91770186" title="3D illuminated abstract digital wave">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=91770186" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2711989/vector/9177/91770186/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=91770186  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=91770186%27" tppabs="http://www.yituw.com/goods.php?media_id=91770186" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2711989/vector/9177/91770186/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="107185922" title="concept of knowledge sharing">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=107185922" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2890953/image/10718/107185922/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=107185922  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=107185922%27" tppabs="http://www.yituw.com/goods.php?media_id=107185922" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2890953/image/10718/107185922/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="51226785" title="Connection between people and technology">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=51226785" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1813545/image/5122/51226785/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=51226785  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=51226785%27" tppabs="http://www.yituw.com/goods.php?media_id=51226785" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1813545/image/5122/51226785/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="113076514" title="Artificial Intelligence Colored Icon Set">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=113076514" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2535571/vector/11307/113076514/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=113076514  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=113076514%27" tppabs="http://www.yituw.com/goods.php?media_id=113076514" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/2535571/vector/11307/113076514/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="227009370" title="futuristic silver cyborg adjusting eye prosthesis and looking at digital data isolated on grey, future technology concept  ">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=227009370" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/13193658/image/22700/227009370/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=227009370  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=227009370%27" tppabs="http://www.yituw.com/goods.php?media_id=227009370" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/13193658/image/22700/227009370/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="71503727" title="Business Human and Robot hands in handshake">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71503727" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503727/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71503727  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71503727%27" tppabs="http://www.yituw.com/goods.php?media_id=71503727" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71503727/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="341">
+                <div class="cover ui_cover" >
+                    <dl sn="11413299" title="Conceptual image of business woman without head and daily routin">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=11413299" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1028979/image/1141/11413299/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=11413299  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=11413299%27" tppabs="http://www.yituw.com/goods.php?media_id=11413299" target="_blank"><img class="lazy" data-original="http://static9.yituw.com/thumbs/1028979/image/1141/11413299/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="180118812" title="Artificial Thought">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=180118812" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1025323/image/18011/180118812/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=180118812  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=180118812%27" tppabs="http://www.yituw.com/goods.php?media_id=180118812" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1025323/image/18011/180118812/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="10491230" title="Eye of artificial intelligence">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=10491230" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/1049/10491230/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=10491230  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=10491230%27" tppabs="http://www.yituw.com/goods.php?media_id=10491230" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/1049/10491230/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="196">
+                <div class="cover ui_cover" >
+                    <dl sn="144710967" title="Artificial intelligence concept">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=144710967" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710967/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=144710967  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=144710967%27" tppabs="http://www.yituw.com/goods.php?media_id=144710967" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14471/144710967/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="45412005" title="Artificial Intelligence ">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=45412005" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1025323/image/4541/45412005/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=45412005  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=45412005%27" tppabs="http://www.yituw.com/goods.php?media_id=45412005" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1025323/image/4541/45412005/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="71500309" title="Woman Playing Chess with Robot">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=71500309" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500309/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=71500309  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=71500309%27" tppabs="http://www.yituw.com/goods.php?media_id=71500309" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/1813545/image/7150/71500309/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="292">
+                <div class="cover ui_cover" >
+                    <dl sn="213075874" title="Digital data and network connection of human brain with flare light on black background in the form of artificial intelligence for technology concept, 3d abstract illustration">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=213075874" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/11351024/image/21307/213075874/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=213075874  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=213075874%27" tppabs="http://www.yituw.com/goods.php?media_id=213075874" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/11351024/image/21307/213075874/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="8759489" title="Numbers of the Mind">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=8759489" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/875/8759489/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=8759489  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=8759489%27" tppabs="http://www.yituw.com/goods.php?media_id=8759489" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/875/8759489/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+                <div class="cover ui_cover" >
+                    <dl sn="129071856" title="abstract geometric human face">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=129071856" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1030956/vector/12907/129071856/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=129071856  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=129071856%27" tppabs="http://www.yituw.com/goods.php?media_id=129071856" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1030956/vector/12907/129071856/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="153">
+                <div class="cover ui_cover" >
+                    <dl sn="189058538" title="Cyborg head using artificial intelligence to create digital inte">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=189058538" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1008648/image/18905/189058538/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=189058538  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=189058538%27" tppabs="http://www.yituw.com/goods.php?media_id=189058538" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1008648/image/18905/189058538/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+                <div class="cover ui_cover" >
+                    <dl sn="8423671" title="Mind Over Number">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=8423671" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1025323/image/842/8423671/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=8423671  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=8423671%27" tppabs="http://www.yituw.com/goods.php?media_id=8423671" target="_blank"><img class="lazy" data-original="http://static8.yituw.com/thumbs/1025323/image/842/8423671/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="142114850" title="Modern technologies concepts">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=142114850" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1071909/image/14211/142114850/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=142114850  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=142114850%27" tppabs="http://www.yituw.com/goods.php?media_id=142114850" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1071909/image/14211/142114850/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="142820429" title="Artificial intelligence concept with man and laptop">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=142820429" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1000975/image/14282/142820429/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=142820429  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=142820429%27" tppabs="http://www.yituw.com/goods.php?media_id=142820429" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1000975/image/14282/142820429/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="451">
+                <div class="cover ui_cover" >
+                    <dl sn="27247835" title="artificial intelligence background">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=27247835" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1384048/vector/2724/27247835/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=27247835  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=27247835%27" tppabs="http://www.yituw.com/goods.php?media_id=27247835" target="_blank"><img class="lazy" data-original="http://img.yituw.com/thumbs/1384048/vector/2724/27247835/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="318">
+                <div class="cover ui_cover" >
+                    <dl sn="102390038" title="Machine learning concept. Innovative new technology">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=102390038" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/7110532/vector/10239/102390038/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=102390038  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=102390038%27" tppabs="http://www.yituw.com/goods.php?media_id=102390038" target="_blank"><img class="lazy" data-original="http://img2.yituw.com/thumbs/7110532/vector/10239/102390038/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="218">
+                <div class="cover ui_cover" >
+                    <dl sn="210243722" title="White humanoid hand on blurred background creating artificial intelligence 3D rendering">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=210243722" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/21024/210243722/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=210243722  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=210243722%27" tppabs="http://www.yituw.com/goods.php?media_id=210243722" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/21024/210243722/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+                <div class="cover ui_cover" >
+                    <dl sn="179915008" title="touch with robot hand">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=179915008" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/1385248/image/17991/179915008/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=179915008  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=179915008%27" tppabs="http://www.yituw.com/goods.php?media_id=179915008" target="_blank"><img class="lazy" data-original="http://img3.yituw.com/thumbs/1385248/image/17991/179915008/api_thumb_450.jpg" /></a>
+            </li>
+
+                                                <li class="imgItem maskWraper item" data-width="450" data-height="202">
+                <div class="cover ui_cover" >
+                    <dl sn="250927328" title="Robotic woman cyborg face representing artificial intelligence 3">
+                        <dd class='sp1' title="添加至购物车"></dd>
+                        <dd class='sp1_1' title="已经添加"></dd>
+                        <dd class='sp2' title="添加至收藏夹"></dd>
+                        <dd class='sp2_1' title="已收藏"></dd>
+                        <dd class='sp3' title="查看相似图片 "></dd>
+                    </dl>
+                </div>
+                <!-- <a href="goods.php?media_id=250927328" target="_blank"><img class="lazyload" data-original="http://img4.yituw.com/thumbs/1008648/image/25092/250927328/api_thumb_450.jpg" /></a> -->
+                <a href="javascript:if(confirm(%27http://www.yituw.com/goods.php?media_id=250927328  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.yituw.com/goods.php?media_id=250927328%27" tppabs="http://www.yituw.com/goods.php?media_id=250927328" target="_blank"><img class="lazy" data-original="http://img4.yituw.com/thumbs/1008648/image/25092/250927328/api_thumb_450.jpg" /></a>
+            </li>
+
+                        
+
+
+
+
+
+        </ul>
+    </div>
+    <div class="next_pages">
+        <a href="javascript:submitFormNextPage(2)" class="ui_btn" >下一页</a>    </div>
+</div>
+<div class="srch_head_r">
+    <label>共1911页</label>
+    <ul>
+                <li class="prev"><a href="javascript:void(0)"></a></li>
+                <li><input type="text" class="sr" name="pagenowb" id="pagenowb" value="1"/>
+        <li class="next"><a href="javascript:submitFormNextPage(2)"></a></li>
+            </ul>
+</div>
+</div>
+        
+<script type="text/javascript">
+    var goods = new Object();
+</script>
+
+        <div class="h_foot">
+  <div class="wrapper">
+    <div class="txt">
+            还没找到想要的正版图片？来探索亿图视觉世界吧！ 
+    </div>
+    <div class="form">
+      <form id="footform" action="http://www.yituw.com/searchi.php" method="get">
+        <input type="text" class="txt1" name="keyword" id="" value="" placeholder="搜索照片、矢量图和插画，支持双语哦"   autocomplete="off"/>
+        <input type="submit" class="btn" value=""/>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="index.htm" tppabs="http://www.yituw.com/"><img src="themes/meisu2017/imgs/f_logo.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/f_logo.png"></a>
+      <!-- <h4><a href="http://www.huaban.com">回到亿图</a></h4>-->
+    </div>
+    <div class="nav">
+      <dl>
+        <dd><a href="about.php-action=company.htm" tppabs="http://www.yituw.com/about.php?action=company">关于我们</a></dd>
+        <!-- <dd><a href="about.php?action=price" >价格体系</a></dd>-->
+        <dd><a href="about.php-action=contact-us.htm" tppabs="http://www.yituw.com/about.php?action=contact-us" >联系我们</a></dd>
+      </dl>
+      <dl>
+        <dd><a href="about.php-action=copyright-standar.htm" tppabs="http://www.yituw.com/about.php?action=copyright-standar" >版权说明</a></dd>
+        <dd><a href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms" >服务条款</a></dd>
+        <dd><a href="about.php-action=questions.htm" tppabs="http://www.yituw.com/about.php?action=questions" >常见问题</a></dd>
+      </dl>
+    </div>
+    <div class="qrimg">
+      <!--<div class="img">
+        <img src="themes/meisu2017/imgs/er.jpg">
+      </div>-->
+      <div class="txt">
+        <div class="qq">
+          <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">在线客服</a>
+        </div>
+        <h4>15910897940<br>
+        Email: zanggong@yituw.com</h4>
+      </div>
+    </div>
+    <!--<div class="link">
+      <h4>申请版权登记，让原创更有价值</h4>
+            <a href="http://copyright.meisupic.com/">版权登记入口</a>
+    </div>-->
+  </div>
+    <div class="copyright">
+    <span></span>
+    Copyright ©2017 北京亿图视讯科技有限公司版权所有 京ICP备17042338号
+  </div>
+</div>
+
+
+
+<div id="login_wrap" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>登录</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_LOGINFORM" name="ECS_LOGINFORM" method="post">
+    <!--
+    <h4 class="mt15"><a href="user.php?act=hbauth" class="huaban_login">点击此处用花瓣帐号登录</a></h4>
+    -->
+    <div class="login_form">
+      <input type="text" name="login_username" id="login_username" placeholder="手机号"/>
+      <input type="password" name="login_password" id="login_password"  placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="login_remember" name="login_remember">
+        <label for="login_remember"></label>
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="user.php-act=sms_get_password_1.htm" tppabs="http://www.yituw.com/user.php?act=sms_get_password_1">忘记密码？</a></span>
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="javascript:signIn()">登录</a>
+    </div>
+  </form>
+    <p>还没有账号？<a href="#" class="zhuce">马上注册</a></p>
+  </div>
+</div>
+
+
+<div id="login_wrap_bf" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>请登录后再进行收藏或购买</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <h4 class="mt15">您可以使用花瓣网账号和密码直接登录</h4>
+    <div class="login_form">
+      <input type="text" placeholder="手机号/花瓣网账号"/>
+      <input type="password" placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="check5">
+        <label for="check5"></label>
+        
+        
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="">忘记密码？</a></span>　　　
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="#">登录</a>
+    </div>
+    
+    <p>还没有账号？<a href="#" class="zhuce" >马上注册</a></p>
+  </div>
+</div>
+
+
+<div id="register_wrap" class="d_none">
+  <div class="login_wrap register_wrap">
+    <em></em>
+    <div class="head">
+      <h2>注册</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="reg_mobile_drag" class="txt" id="reg_mobile_drag" value="" placeholder="手机号" autocomplete="off" /></li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn1" id="" value="" />
+          <input type="text" name="" class="txt txt1" value="" placeholder="按住滑块，拖动到最右边"  />
+        </li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn2" id="" value="" />
+          <input type="text" name="" class="txt txt2"  value="验证通过"   />
+        </li>
+        <li>
+          <div id="drag"></div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mt40 btn d_none" id="div_regs">
+      <a href="javascript:void(0)" id="regs">立即注册</a>
+    </div>
+    
+    <p>已有账号？<a href="#" class="denglu" >马上登录</a></p>      
+    
+  </div>
+</div>
+
+
+
+
+
+
+<div id="reg_wrap" class="d_none">
+  <div class="login_wrap register_wrap02">
+    <em></em>
+    <div class="head">
+      <h2>欢迎来到亿图视觉</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_REGFORM" name="ECS_REGFORM" method="post">
+        <input id="agreement" name="agreement" value="1" type="checkbox" hidden="">
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="extend_field5" class="txt" id="extend_field5" value="" placeholder="请输入手机号" maxlength="11" /></li>
+        <!-- <li><input type="text" name="sms_code" class="txt txt01" id="sms_code" value="" placeholder="手机验证码" style="border-right: 0;width: 216px !important" maxlength="6" />
+        <input type="button" id="getcode" name="" class="btn_n" id="" value="获取验证码" />
+        
+        </li>
+        -->
+        <li><input type="text" name="extend_field102" class="txt" id="extend_field102" value="" placeholder="昵称（必填）" maxlength="20" /></li>
+        <li><input type="password" name="password" class="txt" id="password" value="" placeholder="密码"  maxlength="20" /></li>
+        <li><input type="password" name="confirm_password" class="txt" id="confirm_password" value="" placeholder="确认密码"  maxlength="20" /></li>
+        
+      </ul>
+    </div>
+    </form>
+    <div class="label">
+      <input id="checkbox1" name="checkbox" value="" type="checkbox" checked>
+      <label for="checkbox1"></label>
+      我已阅读并同意<a style="color: #FC4349" target="_blank" href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms">《服务条款》</a>
+    </div>
+    
+    <div class="mt40 btn">
+      <a href="javascript:ajax_register()">提交</a>
+    </div>  
+  </div>
+</div>
+
+<div id="srchimg_wrap_fa" style="display: none;">
+  <div class="srchimg_wrap srchimg_wrap_fa">
+  
+       <div class="head">
+        <ul>
+                       <li>
+            <input style="" name="searchtype_fa" id="searchtype_fa_115" value="115" type="radio" autocomplete="off"><label for="searchtype_fa_115"><i></i></label>不保存(0)
+            </li>
+           
+        </ul>     
+       </div>
+       <div class="body"  >        
+        <input type="submit" name="" id="fa_submit" class="btn" value="确定" onclick="" />      
+       </div>
+  </div>
+</div>
+
+
+
+<div id="srchimg_wrap" style="display: none;">
+  <div class="srchimg_wrap">
+  <form id="ECS_SEARCHBYIMG" name="ECS_SEARCHBYIMG" action="http://www.yituw.com/searchi.php" method="post"  enctype="multipart/form-data">
+       <div class="head">
+        <ul>
+          <li class="selected">
+            <input name="searchtype" checked="checked" value="1" id="searchtype_1"  type="radio" autocomplete="off"><label for="searchtype_1"><i></i></label>按链接地址　
+          </li>
+          <li>
+            <input name="searchtype" value="2" id="searchtype_2"  type="radio" autocomplete="off"><label for="searchtype_2"><i></i></label>上传图片　
+          </li>
+        </ul>     
+       </div>
+       <div class="body"  >
+        <input type="text" name="image_url" id="" class="txt" value="" placeholder="黏贴图片URL" />        
+        <input type="submit" name="" id="" class="btn" value="搜索" onclick="dialog('搜索结果加载中...',2);" />      
+       </div>
+       
+       <div class="body" style="display: none;" >
+          <div class="upload">
+            <div class="ico">
+              
+            </div>
+            <h4>选择搜索图片</h4>
+            <input type="file" name="searchimg" class="file"  id="searchimg" value="" onchange="this.form.submit();dialog('搜索结果加载中...',2);" />
+          </div>  
+       </div> 
+       </form>     
+  </div>
+</div>
+<div class="sidebar">
+  <ul>
+    <a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">
+      <li class='n1'></li>
+    </a>
+    <a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">
+      <li class='n2'></li>
+    </a>
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">
+      <li class='n3' title="在线咨询"></li>
+    </a>
+    <a href="#all_toper">
+      <li class='n4'></li>
+    </a>
+  </ul>
+</div>
+
+
+<div id="forward_wap" class="d_none">
+  <div class="forward_wap">
+    <h4 class="del_txt">我们的图片购买功能还没正式开放哦，为表示歉意，奉上7折优惠码一枚。请您8月份再来体验！</h4>
+    <div class="body">
+      <ul>
+        <li><input type="text" name="forward_name" class="txt" id="forward_name" value="" placeholder="姓名或公司名称" /></li>
+        <li><input type="text" name="forward_tel" class="txt txt01" id="forward_tel" value="" placeholder="手机号" />
+        <li><input type="text" name="forward_mail" class="txt" id="forward_mail" value="" placeholder="邮箱" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<input type="hidden" id="hidden_reg_mobile_drag" value="">
+<script type="text/javascript" src="themes/meisu2017/js/jquery-1.7.2.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.glide.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.glide.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/layer.js" tppabs="http://www.yituw.com/themes/meisu2017/js/layer.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.easydropdown.min.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.easydropdown.min.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.poshytip.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.poshytip.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.row-grid.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.row-grid.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/script.js-v=4.js" tppabs="http://www.yituw.com/themes/meisu2017/js/script.js?v=4"></script>
+<script type="text/javascript" src="themes/meisu2017/js/dialog.js" tppabs="http://www.yituw.com/themes/meisu2017/js/dialog.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/gy.js" tppabs="http://www.yituw.com/themes/meisu2017/js/gy.js"></script>
+<script src="themes/meisu2017/three/drag.js" tppabs="http://www.yituw.com/themes/meisu2017/three/drag.js" type="text/javascript"></script>
+<script src="themes/meisu2017/js/photo.js" tppabs="http://www.yituw.com/themes/meisu2017/js/photo.js" type="text/javascript"></script>
+<!-- <script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=1245" async="async" defer="defer"></script> -->
+
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = '../static.meiqia.com/dist/meiqia.js-_=t.js'/*tpa=https://static.meiqia.com/dist/meiqia.js?_=t*/;
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 115890);
+</script><script type="text/javascript">
+window.onscroll = function(){
+getSearchIds();
+showItems();
+}
+var show_array = []; // 显示的所有pids
+var send_status = 1; // 发送状态 默认允许发
+
+function getSearchIds(){
+
+var items = $(".imgList").find(".imgItem");
+var len = items.length;
+var start = 0;
+
+for (var i=start; i < len ; i++ ){
+var elem = items[i];
+if($(elem).offset().top <= $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+
+var img = $(elem).find("img");
+var pid = $(img).parent().attr("data-id");
+var is_has = show_array.indexOf(pid);
+if(is_has < 0)
+{
+show_array.push(pid);
+}
+start = i;
+send_status = 0;
+}
+else{
+if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+send_status = 1;
+break;
+}
+}
+}
+// 解决只有一排数据不发送的问题
+if(len <= 5 && len > 0)
+{
+send_status = 1;
+}
+}
+function showItems(){
+
+var items = $(".imgList").find(".imgItem");
+var len = items.length;
+var start = 0;
+
+for (var i=start; i < len ; i++ ){
+var elem = items[i];
+if($(elem).offset().top < $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+
+var img = $(elem).find("img");
+if (!$(img).attr("src")){
+$(img).attr("src",$(img).attr("data-original")).fadeIn();
+start = i;
+}
+}
+else{
+if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+break;
+}
+}
+}
+
+}
+
+function setPiclistSize(){
+$("#goods-img-list").Huiphoto({
+wraperWidth:"auto",
+item:".imgItem",
+margin:50,
+extra:0
+});
+}
+function setTopicPiclistSize(){
+$("#topic-img-list").Huiphoto({
+wraperWidth:"auto",
+item:".item",
+minHeight: 200 ,
+margin:50,
+extra:0,
+});
+}
+
+$(function(){
+setPiclistSize();
+setTopicPiclistSize();
+showItems();
+$(window).resize(function() {
+setPiclistSize();
+setTopicPiclistSize();
+});
+});
+</script>
+        </body>
+        </html>
+
+<script type="text/javascript" src="themes/meisu2017/js/jquery.lazyload.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+
+
+ $(function() {
+
+      //$("http://www.yituw.com/img.lazy").lazyload({placeholder:"../imgs.126306.com/upload/20150730/212003_3750.gif"/*tpa=http://imgs.126306.com/upload/20150730/212003_3750.gif*/});
+
+      //加载完第一页的时候，自动加载第二页的，只生成缓存
+      var param = GetUrlPara();
+
+
+      var url = "/search_cache.php?"+param+"&offset="+(parseInt($('#s_offset').val())+1);
+      //alert(url);
+
+      Ajax.call(url, '', 'GET', 'JSON');
+
+      $('#fa_submit').click(function(e){
+        
+            goods.class_id = $('input:radio[name="searchtype_fa"]:checked').val();
+            //loading(1);
+            $.get("http://www.yituw.com/user.php?act=collect",{goods_sn:goods.goods_sn,class_id:goods.class_id},
+                function(data){
+                //loading(2); 
+                  if(data.error=='0' ){
+                    dialog(data.message,2);
+                  }
+                  else if(data.error=='11'){
+                    //window.location.href="user.php.htm"/*tpa=http://www.yituw.com/user.php?act=login*/;
+                    dialog(data.message,2);
+                  }
+                  else if(data.error=='10'){
+                    //window.location.href="user.php.htm"/*tpa=http://www.yituw.com/user.php?act=login*/;
+                    $("#login").click();
+                  }
+                },"json");
+            
+        })
+
+  });
+
+function GetUrlPara()
+{
+    var url = document.location.toString();
+    var arrUrl = url.split("?");
+    var para = arrUrl[1];
+    return para;
+}
+
+</script>
+
+
+

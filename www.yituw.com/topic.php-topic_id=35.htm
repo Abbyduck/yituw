@@ -1,0 +1,1590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="ECSHOP v3.6.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>亿图视觉</title>
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<style type="text/css">.imgListInit {
+    height: 0;
+    overflow: hidden;
+}
+.imgList {
+    font-size: 0;
+    letter-spacing: -3px;
+    line-height: 0;
+    margin: 0 auto;
+}
+.imgList .imgItem {
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+.imgList .imgItem .icon-down {
+    margin-left: 10px;
+}
+.imgList .imgItem a {
+    display: inline-block;
+    text-decoration: none;
+}
+.imgList .imgItem a img {
+    display: inline-block;
+    height: auto;
+}
+.imgItem {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+#nopic {
+    display: none;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+}
+.album_details .txt .btns{
+    border:1px solid #fff; height:40px; position:relative;margin-top: 50px;
+}
+.album_details .txt .btns em{
+    position:absolute; left:50%; top:50%; margin-top:-10px; height:20px; width:1px; background:#fff;
+}
+.album_details .txt .btns a{
+    border:0; width:50%; line-height:40px; margin:0; text-decoration:none;
+}
+.album_details .txt .btns a:hover{
+    border-color:#fff ; background: none; color: #FC4349;
+}
+.album_details .txt .btns .icon-btn{
+    cursor: default;
+}
+.album_details .txt .btns .icon-btn:hover{
+    color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="loader" style="z-index: 198910151;display: none">
+</div>  
+<div class="header header_black">
+  <div class="wrapper">
+  <div class="logo">
+                      
+                                <a href="./"><img class="logo-normal" src="themes/meisu2017/imgs/logo1.png"/></a>
+                          </div>
+    <div class="copyr">
+       <a href="./">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a href="http://copyright.meisupic.com">版权登记</a>-->
+       &nbsp;&nbsp;&nbsp;&nbsp;<a href="topic.php">精选专辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a href="dci.php">DCI专区</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="about.php?action=price&from=top"><font color="#FC4349">新手套餐</font><i class="huodong_top_hot"></i></a> -->
+    </div>
+      <font id="ECS_MEMBERZONE"><div id="append_parent"></div>
+ 
+<div class="nav_af">
+<ul>
+<!-- <li class='le le1'><a href="about.php?action=price">套餐价格</a></li> -->
+        <li class='le le2'><a href="user.php?act=collection_list">收藏夹</a></li>
+        <li class='le le3'><a href="flow.php">购物车</a></li>
+        <li class="le le4">
+        <a href="user.php" class='mail'>cesh...</a>
+                    <span class='arr'></span>
+                    <div class="hdn">
+                        <dl>
+                            <dd><a href="user.php?act=order_list">我的订单</a></dd>
+                            <dd><a href="user.php?act=package">我的套餐</a></dd>
+                            <dd><a href="user.php?act=down_list">下载记录</a></dd>
+                            <dd><a href="user.php?act=collection_list">收藏夹</a></dd>
+                            <dd><a href="user.php?act=history_list">我的足迹</a></dd>
+                            <!--
+                            <dd><a href="user.php?act=notice">系统通知</a></dd>
+                            -->
+                            <dd><a href="user.php?act=profile">账户管理</a></dd>
+                            <dd><a href="user.php?act=logout" class='last'>退出</a></dd>
+                        </dl>
+                    </div>
+        </li>
+</ul>
+</div>
+ </font>
+  </div>
+</div>
+<div class="toper">
+  <div class="wrapper">
+    <h2>探索亿图视觉世界！</h2>
+    <div class="form">
+      <form action="http://www.yituw.com/searchi.php" method="get" id="myform">
+      <input class="s_clearall" type="hidden" value='' name="offset" id="s_offset">
+      <input class="s_clearall" type="hidden" value='' name="sort" id="s_sort">
+      <input class="s_clearall" type="hidden" value='' name="phototype" id="s_phototype">
+      <input class="s_clearall" type="hidden" value='' name="orientation" id="s_orientation">
+      <input class="s_clearall" type="hidden" value='' name="people_only" id="s_people_only">
+      <input class="s_clearall" type="hidden" value='' name="race" id="s_race">
+      <input class="s_clearall" type="hidden" value='' name="age" id="s_age">
+      <input class="s_clearall" type="hidden" value='' name="gender" id="s_gender">
+      <input class="s_clearall" type="hidden" value='' name="quantity" id="s_quantity">
+      <input class="s_clearall" type="hidden" value='' name="color" id="s_color">
+      <input class="s_clearall" type="hidden" value='' name="categories" id="s_categories">
+      <input class="s_clearall" type="hidden" value='' name="username" id="s_username">
+      <input class="s_clearall" type="hidden" value='' name="exclude_keyword" id="s_exclude_keyword">
+        <div class="type">
+          <!--<h4>全部图片</h4>-->
+          <div class="bt">
+            <i class="n1"></i>
+            <i class="n2"></i>
+          </div>
+          <select class="dropdown" onchange="changeSearch('phototypesearch',this.options[this.options.selectedIndex].value)">
+                 <option value="" class="label">全部图片</option>
+                 <option value="" class="label">全部图片</option>
+                   <option value="photo">照片</option>
+                 <option value="vector" >矢量图</option>  
+             </select>
+        </div>
+        <div class="input">
+          <input type="text" class="txt" placeholder="输入关键词" name="keyword" id="keyword" value="" autocomplete="off"/>
+          <input onclick="submitForm()" class="btn" value="" type="submit" />
+        </div>
+        <div id="srch_img" class="srch_img"> </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- <div class="album_details">
+  <img src="data/afficheimg/20170830uksnsi.jpg"/>
+  <div class="txt">
+    <h2>通信<small>共 78幅作品</small></h2>
+      <div class="btns">
+          <em></em>
+          <a href="topic.php">全部专辑</a>
+                      <a href="javascript:void(0)"  data-topic-id="35" class="collect-topic">收藏专辑</a>
+                          </div>
+  </div>
+</div> -->
+<div class="search_content mt40">
+  <div class="wrapper1">
+    
+       <div id="searchCon2" class="imgs ui_imgs">
+<ul class="imgList">
+                    
+                                      <li class="imgItem maskWraper item" data-width="450" data-height="319">
+          <div class="cover ui_cover" >
+            <dl sn="1449015" title="全球通信的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=1449015" target="_blank"><img class="lazyload" data-original="http://static3.yituw.com/thumbs/1002158/image/144/1449015/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="2244983" title="卫星移动通信">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=2244983" target="_blank"><img class="lazyload" data-original="http://static3.yituw.com/thumbs/1005383/image/224/2244983/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="293">
+          <div class="cover ui_cover" >
+            <dl sn="2527773" title="蓝色商业背景">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=2527773" target="_blank"><img class="lazyload" data-original="http://static3.yituw.com/thumbs/1008559/vector/252/2527773/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="343">
+          <div class="cover ui_cover" >
+            <dl sn="3939512" title="在小山在一片蓝天之前各种电气电力线">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=3939512" target="_blank"><img class="lazyload" data-original="http://static5.yituw.com/thumbs/1008065/image/393/3939512/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="299">
+          <div class="cover ui_cover" >
+            <dl sn="4156975" title="丹麦红邮政信箱">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=4156975" target="_blank"><img class="lazyload" data-original="http://static5.yituw.com/thumbs/1033308/image/415/4156975/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="280">
+          <div class="cover ui_cover" >
+            <dl sn="4668179" title="在说">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=4668179" target="_blank"><img class="lazyload" data-original="http://static5.yituw.com/thumbs/1041421/image/466/4668179/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="4801319" title="unga det ombudsman i datacenter serverrum">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=4801319" target="_blank"><img class="lazyload" data-original="http://static4.yituw.com/thumbs/1003697/image/480/4801319/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="301">
+          <div class="cover ui_cover" >
+            <dl sn="5988474" title="信息拼图">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=5988474" target="_blank"><img class="lazyload" data-original="http://static6.yituw.com/thumbs/1035123/image/598/5988474/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="337">
+          <div class="cover ui_cover" >
+            <dl sn="6288572" title="技术的星球。矢量插画.">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=6288572" target="_blank"><img class="lazyload" data-original="http://static6.yituw.com/thumbs/1036039/vector/628/6288572/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+          <div class="cover ui_cover" >
+            <dl sn="7211925" title="ip 电话和二进制代码">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=7211925" target="_blank"><img class="lazyload" data-original="http://static7.yituw.com/thumbs/1000140/image/721/7211925/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="9087395" title="复古通信">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=9087395" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1394326/image/908/9087395/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="328">
+          <div class="cover ui_cover" >
+            <dl sn="9352438" title="圣诞球红丝带">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=9352438" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1040728/image/935/9352438/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="487">
+          <div class="cover ui_cover" >
+            <dl sn="9598517" title="接口集合-布鲁内特站在虚拟现实">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=9598517" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1010338/image/959/9598517/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="9600195" title="web 2.0 的女孩。字云，紧迫的解决方案。纯新的技术，找到正确的解决方案、 良好融合、 获得业务经验，销售成长和更多的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=9600195" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1010338/image/960/9600195/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="298">
+          <div class="cover ui_cover" >
+            <dl sn="10036063" title="智能手机通信概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=10036063" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1035123/image/1003/10036063/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="298">
+          <div class="cover ui_cover" >
+            <dl sn="10196758" title="电动各种电力线">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=10196758" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1370441/image/1019/10196758/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="366">
+          <div class="cover ui_cover" >
+            <dl sn="10200470" title="手机触摸屏">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=10200470" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1559686/image/1020/10200470/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="437">
+          <div class="cover ui_cover" >
+            <dl sn="10413546" title="社会网络的结构">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=10413546" target="_blank"><img class="lazyload" data-original="http://static8.yituw.com/thumbs/1559686/image/1041/10413546/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="217">
+          <div class="cover ui_cover" >
+            <dl sn="11285930" title="小狗冲浪">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=11285930" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1625039/image/1128/11285930/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="315">
+          <div class="cover ui_cover" >
+            <dl sn="11308826" title="服务器室内">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=11308826" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1000128/image/1130/11308826/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="270">
+          <div class="cover ui_cover" >
+            <dl sn="11470072" title="鼠标连接">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=11470072" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1320280/image/1147/11470072/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="11693426" title="网络">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=11693426" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1594308/image/1169/11693426/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="308">
+          <div class="cover ui_cover" >
+            <dl sn="12036015" title="在手中的技术">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=12036015" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1559686/image/1203/12036015/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="333">
+          <div class="cover ui_cover" >
+            <dl sn="12285934" title="社会网络的结构">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=12285934" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1559686/image/1228/12285934/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="345">
+          <div class="cover ui_cover" >
+            <dl sn="12286070" title="已断开连接">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=12286070" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1729220/image/1228/12286070/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="357">
+          <div class="cover ui_cover" >
+            <dl sn="12290058" title="军事妇女使用通信设备">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=12290058" target="_blank"><img class="lazyload" data-original="http://static9.yituw.com/thumbs/1729220/image/1229/12290058/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="13159839" title="计算机网络">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=13159839" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1706369/image/1315/13159839/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="13820010" title="信息技术它概念: 像素化词联系我们">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=13820010" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1152339/image/1382/13820010/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="255">
+          <div class="cover ui_cover" >
+            <dl sn="14231173" title="社会网络概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=14231173" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1001201/image/1423/14231173/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="14236561" title="电信卫星天线">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=14236561" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1101919/image/1423/14236561/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="301">
+          <div class="cover ui_cover" >
+            <dl sn="14421255" title="信号导航">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=14421255" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1740542/image/1442/14421255/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="294">
+          <div class="cover ui_cover" >
+            <dl sn="14717387" title="商人和晚市">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=14717387" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1144687/image/1471/14717387/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="14974171" title="网络电缆和集线器特写与纤维光学背景">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=14974171" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1006354/image/1497/14974171/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="405">
+          <div class="cover ui_cover" >
+            <dl sn="16207217" title="红色手机">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=16207217" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1144687/image/1620/16207217/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="18270473" title="社会媒体的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=18270473" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1071909/image/1827/18270473/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="18360625" title="两个女人和技术上的装置">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=18360625" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1000315/image/1836/18360625/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="18398501" title="数字信息流">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=18398501" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1025323/image/1839/18398501/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="348">
+          <div class="cover ui_cover" >
+            <dl sn="19347767" title="社会媒体的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=19347767" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1144687/image/1934/19347767/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="24585275" title="呼叫中心运营工作">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=24585275" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1177973/image/2458/24585275/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="25588773" title="碟形卫星天线.">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=25588773" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1968353/image/2558/25588773/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="248">
+          <div class="cover ui_cover" >
+            <dl sn="35580385" title="甚大阵射电望远镜">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=35580385" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1532470/image/3558/35580385/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="36991743" title="使用无线技术的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=36991743" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1014829/image/3699/36991743/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="299">
+          <div class="cover ui_cover" >
+            <dl sn="42022743" title="光纤光缆">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=42022743" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1397034/image/4202/42022743/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+          <div class="cover ui_cover" >
+            <dl sn="42023165" title="链链接的电子邮件">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=42023165" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1483427/image/4202/42023165/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="42609393" title="孩子通过扩音器大喊">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=42609393" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1137733/image/4260/42609393/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="223">
+          <div class="cover ui_cover" >
+            <dl sn="44525753" title="全球通信">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=44525753" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1032174/vector/4452/44525753/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="277">
+          <div class="cover ui_cover" >
+            <dl sn="53875805" title="信息技术背景">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=53875805" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3223379/image/5387/53875805/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="58982953" title="少女手中的笔记本电脑">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=58982953" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1192109/image/5898/58982953/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="62628167" title="智能手机社会网络">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=62628167" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2885805/vector/6262/62628167/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="63679091" title="使用移动电话的商人">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=63679091" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/4331537/image/6367/63679091/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="428">
+          <div class="cover ui_cover" >
+            <dl sn="71577365" title="人和道德理想原则概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=71577365" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3591429/image/7157/71577365/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="71978857" title="复古旋转式手机">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=71978857" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1001855/image/7197/71978857/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="298">
+          <div class="cover ui_cover" >
+            <dl sn="75899521" title="电信的卫星天线">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=75899521" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3944627/image/7589/75899521/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="80505932" title="Communication towers on orange purple sky background, Peru">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=80505932" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1014097/image/8050/80505932/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="655">
+          <div class="cover ui_cover" >
+            <dl sn="81871748" title="空间卫星在地球这颗行星">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=81871748" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1000647/image/8187/81871748/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="81871774" title="国际空间站和宇航员.">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=81871774" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1000647/image/8187/81871774/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="84952238" title="使用现代技术和数字攻关的商人手">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=84952238" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1907633/image/8495/84952238/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="88026122" title="使用一个数字平板的商人">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=88026122" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3889193/image/8802/88026122/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="104289494" title=" 网络连接 Concpet">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=104289494" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3591429/image/10428/104289494/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="105135264" title="业务发展图表">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=105135264" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/6235482/image/10513/105135264/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="110870566" title="微笑的时髦女孩打电话与手机，而放松后散步在夏天 ">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=110870566" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3396639/image/11087/110870566/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="111383826" title="深思熟虑的企业家正在使用数字平板电脑和笔记本电脑进行财务分析">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=111383826" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/3396639/image/11138/111383826/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="295">
+          <div class="cover ui_cover" >
+            <dl sn="116154080" title="使用带网络的笔记本电脑的商人">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=116154080" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/2673929/image/11615/116154080/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="285">
+          <div class="cover ui_cover" >
+            <dl sn="125942586" title="智能城市和无线通信的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=125942586" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/7677414/image/12594/125942586/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="125944222" title="智能城市和无线通信的概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=125944222" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/7677414/image/12594/125944222/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="127678966" title="与全球地图物流多式联运集装箱 ">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=127678966" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/7677414/image/12767/127678966/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="398">
+          <div class="cover ui_cover" >
+            <dl sn="137568788" title="Sillhouetted 商务人士使用智能手机与模糊市镍">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=137568788" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/2268523/image/13756/137568788/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="145073379" title="映射在智能城和无线通信网络、 业务的销">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=145073379" target="_blank"><img class="lazyload" data-original="http://img3.yituw.com/thumbs/3049830/image/14507/145073379/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="3555056" title="抽象网络">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=3555056" target="_blank"><img class="lazyload" data-original="http://static4.yituw.com/thumbs/1021974/image/355/3555056/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="6617054" title="建立网络、 网络电缆、 lan 电缆">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=6617054" target="_blank"><img class="lazyload" data-original="http://static6.yituw.com/thumbs/1175677/image/661/6617054/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="318">
+          <div class="cover ui_cover" >
+            <dl sn="6871182" title="社会网络概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=6871182" target="_blank"><img class="lazyload" data-original="http://static7.yituw.com/thumbs/1199741/image/687/6871182/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="375">
+          <div class="cover ui_cover" >
+            <dl sn="16365703" title="现代通信技术">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=16365703" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1000423/image/1636/16365703/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+          <div class="cover ui_cover" >
+            <dl sn="17973013" title="光纤连接 / 业务通信 / 网络技术">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=17973013" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1938335/vector/1797/17973013/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="338">
+          <div class="cover ui_cover" >
+            <dl sn="18849443" title="现代网络交换机用电缆.">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=18849443" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1968353/image/1884/18849443/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="450">
+          <div class="cover ui_cover" >
+            <dl sn="20692461" title="在中东和印度主要航线">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=20692461" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1018414/image/2069/20692461/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="309">
+          <div class="cover ui_cover" >
+            <dl sn="29829923" title="全球通信">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=29829923" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/2605379/image/2982/29829923/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="357">
+          <div class="cover ui_cover" >
+            <dl sn="29938391" title="在太阳能电池板中反映的地球与卫星通信">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=29938391" target="_blank"><img class="lazyload" data-original="http://img.yituw.com/thumbs/1015682/image/2993/29938391/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                                                <li class="imgItem maskWraper item" data-width="450" data-height="300">
+          <div class="cover ui_cover" >
+            <dl sn="52242871" title="在线业务通信概念">
+              <dd class='sp1' title="添加至购物车"></dd>
+              <dd class='sp1_1' title="已经添加"></dd>
+              <!-- <dd class='sp2' title="添加至收藏夹"></dd>
+              <dd class='sp2_1' title="已收藏"></dd> -->
+              <dd class='sp3' title="查看相似图片 "></dd>
+            </dl>
+          </div>              
+          <a href="goods.php?media_id=52242871" target="_blank"><img class="lazyload" data-original="http://img2.yituw.com/thumbs/1760420/image/5224/52242871/api_thumb_450.jpg" /></a>            
+        </li>
+                 
+                                
+                </ul>
+            </div>
+    <div class="next_pages next_pages01">
+      <a href="topic.php" class="ui_btn" >查看全部专辑</a>
+    </div>
+  </div>
+</div>
+<div class="h_foot">
+  <div class="wrapper">
+    <div class="txt">
+            还没找到想要的正版图片？来探索亿图视觉世界吧！ 
+    </div>
+    <div class="form">
+      <form id="footform" action="http://www.yituw.com/searchi.php" method="get">
+        <input type="text" class="txt1" name="keyword" id="" value="" placeholder="搜索照片、矢量图和插画，支持双语哦"   autocomplete="off"/>
+        <input type="submit" class="btn" value=""/>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="./"><img src="themes/meisu2017/imgs/f_logo.png"></a>
+      <!-- <h4><a href="http://www.huaban.com">回到亿图</a></h4>-->
+    </div>
+    <div class="nav">
+      <dl>
+        <dd><a href="about.php?action=company">关于我们</a></dd>
+        <!-- <dd><a href="about.php?action=price" >价格体系</a></dd>-->
+        <dd><a href="about.php?action=contact-us" >联系我们</a></dd>
+      </dl>
+      <dl>
+        <dd><a href="about.php?action=copyright-standar" >版权说明</a></dd>
+        <dd><a href="about.php?action=terms" >服务条款</a></dd>
+        <dd><a href="about.php?action=questions" >常见问题</a></dd>
+      </dl>
+    </div>
+    <div class="qrimg">
+      <!--<div class="img">
+        <img src="themes/meisu2017/imgs/er.jpg">
+      </div>-->
+      <div class="txt">
+        <div class="qq">
+          <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">在线客服</a>
+        </div>
+        <h4>15910897940<br>
+        Email: zanggong@yituw.com</h4>
+      </div>
+    </div>
+    <!--<div class="link">
+      <h4>申请版权登记，让原创更有价值</h4>
+            <a href="http://copyright.meisupic.com/">版权登记入口</a>
+    </div>-->
+  </div>
+    <div class="copyright">
+    <span></span>
+    Copyright ©2017 北京亿图视讯科技有限公司版权所有 京ICP备17042338号
+  </div>
+</div>
+<div id="login_wrap" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>登录</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_LOGINFORM" name="ECS_LOGINFORM" method="post">
+    <!--
+    <h4 class="mt15"><a href="user.php?act=hbauth" class="huaban_login">点击此处用花瓣帐号登录</a></h4>
+    -->
+    <div class="login_form">
+      <input type="text" name="login_username" id="login_username" placeholder="手机号"/>
+      <input type="password" name="login_password" id="login_password"  placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="login_remember" name="login_remember">
+        <label for="login_remember"></label>
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="user.php?act=sms_get_password_1">忘记密码？</a></span>
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="javascript:signIn()">登录</a>
+    </div>
+  </form>
+    <p>还没有账号？<a href="#" class="zhuce">马上注册</a></p>
+  </div>
+</div>
+<div id="login_wrap_bf" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>请登录后再进行收藏或购买</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <h4 class="mt15">您可以使用花瓣网账号和密码直接登录</h4>
+    <div class="login_form">
+      <input type="text" placeholder="手机号/花瓣网账号"/>
+      <input type="password" placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="check5">
+        <label for="check5"></label>
+        
+        
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="">忘记密码？</a></span>　　　
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="#">登录</a>
+    </div>
+    
+    <p>还没有账号？<a href="#" class="zhuce" >马上注册</a></p>
+  </div>
+</div>
+<div id="register_wrap" class="d_none">
+  <div class="login_wrap register_wrap">
+    <em></em>
+    <div class="head">
+      <h2>注册</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="reg_mobile_drag" class="txt" id="reg_mobile_drag" value="" placeholder="手机号" autocomplete="off" /></li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn1" id="" value="" />
+          <input type="text" name="" class="txt txt1" value="" placeholder="按住滑块，拖动到最右边"  />
+        </li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn2" id="" value="" />
+          <input type="text" name="" class="txt txt2"  value="验证通过"   />
+        </li>
+        <li>
+          <div id="drag"></div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mt40 btn d_none" id="div_regs">
+      <a href="javascript:void(0)" id="regs">立即注册</a>
+    </div>
+    
+    <p>已有账号？<a href="#" class="denglu" >马上登录</a></p>      
+    
+  </div>
+</div>
+<div id="reg_wrap" class="d_none">
+  <div class="login_wrap register_wrap02">
+    <em></em>
+    <div class="head">
+      <h2>欢迎来到亿图视觉</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_REGFORM" name="ECS_REGFORM" method="post">
+        <input id="agreement" name="agreement" value="1" type="checkbox" hidden="">
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="extend_field5" class="txt" id="extend_field5" value="" placeholder="请输入手机号" maxlength="11" /></li>
+        <!-- <li><input type="text" name="sms_code" class="txt txt01" id="sms_code" value="" placeholder="手机验证码" style="border-right: 0;width: 216px !important" maxlength="6" />
+        <input type="button" id="getcode" name="" class="btn_n" id="" value="获取验证码" />
+        
+        </li>
+        -->
+        <li><input type="text" name="extend_field102" class="txt" id="extend_field102" value="" placeholder="昵称（必填）" maxlength="20" /></li>
+        <li><input type="password" name="password" class="txt" id="password" value="" placeholder="密码"  maxlength="20" /></li>
+        <li><input type="password" name="confirm_password" class="txt" id="confirm_password" value="" placeholder="确认密码"  maxlength="20" /></li>
+        
+      </ul>
+    </div>
+    </form>
+    <div class="label">
+      <input id="checkbox1" name="checkbox" value="" type="checkbox" checked>
+      <label for="checkbox1"></label>
+      我已阅读并同意<a style="color: #FC4349" target="_blank" href="./about.php?action=terms">《服务条款》</a>
+    </div>
+    
+    <div class="mt40 btn">
+      <a href="javascript:ajax_register()">提交</a>
+    </div>  
+  </div>
+</div>
+<div id="srchimg_wrap_fa" style="display: none;">
+  <div class="srchimg_wrap srchimg_wrap_fa">
+  
+       <div class="head">
+        <ul>
+            
+        </ul>     
+       </div>
+       <div class="body"  >        
+        <input type="submit" name="" id="fa_submit" class="btn" value="确定" onclick="" />      
+       </div>
+  </div>
+</div>
+<div id="srchimg_wrap" style="display: none;">
+  <div class="srchimg_wrap">
+  <form id="ECS_SEARCHBYIMG" name="ECS_SEARCHBYIMG" action="http://www.yituw.com/searchi.php" method="post"  enctype="multipart/form-data">
+       <div class="head">
+        <ul>
+          <li class="selected">
+            <input name="searchtype" checked="checked" value="1" id="searchtype_1"  type="radio" autocomplete="off"><label for="searchtype_1"><i></i></label>按链接地址　
+          </li>
+          <li>
+            <input name="searchtype" value="2" id="searchtype_2"  type="radio" autocomplete="off"><label for="searchtype_2"><i></i></label>上传图片　
+          </li>
+        </ul>     
+       </div>
+       <div class="body"  >
+        <input type="text" name="image_url" id="" class="txt" value="" placeholder="黏贴图片URL" />        
+        <input type="submit" name="" id="" class="btn" value="搜索" onclick="dialog('搜索结果加载中...',2);" />      
+       </div>
+       
+       <div class="body" style="display: none;" >
+          <div class="upload">
+            <div class="ico">
+              
+            </div>
+            <h4>选择搜索图片</h4>
+            <input type="file" name="searchimg" class="file"  id="searchimg" value="" onchange="this.form.submit();dialog('搜索结果加载中...',2);" />
+          </div>  
+       </div> 
+       </form>     
+  </div>
+</div>
+<div class="sidebar">
+  <ul>
+    <a href="flow.php">
+      <li class='n1'></li>
+    </a>
+    <a href="user.php?act=collection_list">
+      <li class='n2'></li>
+    </a>
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">
+      <li class='n3' title="在线咨询"></li>
+    </a>
+    <a href="#all_toper">
+      <li class='n4'></li>
+    </a>
+  </ul>
+</div>
+<div id="forward_wap" class="d_none">
+  <div class="forward_wap">
+    <h4 class="del_txt">我们的图片购买功能还没正式开放哦，为表示歉意，奉上7折优惠码一枚。请您8月份再来体验！</h4>
+    <div class="body">
+      <ul>
+        <li><input type="text" name="forward_name" class="txt" id="forward_name" value="" placeholder="姓名或公司名称" /></li>
+        <li><input type="text" name="forward_tel" class="txt txt01" id="forward_tel" value="" placeholder="手机号" />
+        <li><input type="text" name="forward_mail" class="txt" id="forward_mail" value="" placeholder="邮箱" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<input type="hidden" id="hidden_reg_mobile_drag" value="">
+<script type="text/javascript" src="themes/meisu2017/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.glide.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/layer.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.easydropdown.min.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.poshytip.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.row-grid.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/script.js?v=4"></script>
+<script type="text/javascript" src="themes/meisu2017/js/dialog.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/gy.js"></script>
+<script src="themes/meisu2017/three/drag.js" type="text/javascript"></script>
+<script src="themes/meisu2017/js/photo.js" type="text/javascript"></script>
+<!-- <script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=1245" async="async" defer="defer"></script> -->
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = '../static.meiqia.com/dist/meiqia.js-_=t.js'/*tpa=https://static.meiqia.com/dist/meiqia.js?_=t*/;
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 115890);
+</script><script type="text/javascript">
+      window.onscroll = function(){
+        getSearchIds();
+        showItems();
+    }
+        var show_array = []; // 显示的所有pids
+    var send_status = 1; // 发送状态 默认允许发
+    function getSearchIds(){
+        var items = $(".imgList").find(".imgItem");
+        var len = items.length;
+        var start = 0;
+        for (var i=start; i < len ; i++ ){
+            var elem = items[i];
+            if($(elem).offset().top <= $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+            
+                var img = $(elem).find("img");
+                var pid = $(img).parent().attr("data-id");
+                var is_has = show_array.indexOf(pid);
+                if(is_has < 0)
+                {
+                    show_array.push(pid);
+                }
+                start = i;
+                send_status = 0;
+            }
+            else{
+                if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+                    send_status = 1;
+                    break;
+                }
+            }
+        }
+        // 解决只有一排数据不发送的问题
+        if(len <= 5 && len > 0)
+        {
+            send_status = 1;
+        }
+    }
+function showItems(){
+    var items = $(".imgList").find(".imgItem");
+    var len = items.length;
+    var start = 0;
+    for (var i=start; i < len ; i++ ){
+        var elem = items[i];
+        if($(elem).offset().top < $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+        
+            var img = $(elem).find("img");
+            if (!$(img).attr("src")){
+                $(img).attr("src",$(img).attr("data-original")).fadeIn();
+                start = i;
+            }
+        }
+        else{
+            if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+                break;
+            }
+        }
+    }
+}
+function setPiclistSize(){
+    $(".imgList").Huiphoto({
+        wraperWidth:"auto",
+        item:".imgItem",
+        margin:50,
+        extra:0
+    });
+}
+$(function(){
+    setPiclistSize();
+    showItems();
+    $(window).resize(function() {
+        setPiclistSize();
+    });
+    $('.collect-topic').on('click', function(e) {
+        var topic_id = $(this).attr('data-topic-id');
+        $.ajax({
+            url: 'collect_topic.php?id=' + topic_id,
+            type: 'get',
+            success: function (returndata) {
+            var data = jQuery.parseJSON(returndata);
+            switch (parseInt(data["code"])) {
+                case -4:
+                    dialog('您已收藏该专辑', 1);
+                    break;
+                case -3:
+                    dialog('系统错误，缺少id', 1);
+                    break;
+                case -2:
+                    dialog('清先登录', 1);
+                    break;
+                case 1:
+                    layer.closeAll();
+                    dialog(data["message"], 1);
+                    location.reload();
+                    break;
+                default:
+                    layer.closeAll();
+                    dialog('系统错误', 1);
+                }
+            },
+            error: function () {
+                layer.closeAll();
+                dialog('系统错误', 1);
+            }
+        })
+    });
+});
+</script>
+</body>
+</html>

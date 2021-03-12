@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta name="Generator" content="ECSHOP v3.6.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        
+        <title>亿图视觉图片搜索</title>
+        <link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css">
+
+        <link rel="shortcut icon" href="favicon.ico" tppabs="http://www.yituw.com/favicon.ico" />
+        <link rel="icon" href="animated_favicon.gif.css" tppabs="http://www.yituw.com/animated_favicon.gif" type="image/gif" />
+        <script type="text/javascript" src="js/common.js" tppabs="http://www.yituw.com/js/common.js"></script><script type="text/javascript" src="js/transport.js" tppabs="http://www.yituw.com/js/transport.js"></script><script type="text/javascript" src="js/utils.js" tppabs="http://www.yituw.com/js/utils.js"></script>        <style type="text/css">.imgListInit {
+            height: 0;
+            overflow: hidden;
+            }
+            .imgList {
+            font-size: 0;
+            letter-spacing: -3px;
+            line-height: 0;
+            margin: 0 auto;
+            }
+            .imgList .imgItem {
+            border: 1px solid #ebebeb;
+            box-sizing: border-box;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            }
+            .imgList .imgItem .icon-down {
+            margin-left: 10px;
+            }
+            .imgList .imgItem a {
+            display: inline-block;
+            text-decoration: none;
+            }
+            .imgList .imgItem a img {
+            display: inline-block;
+            height: auto;
+            }
+            .imgItem {
+            display: inline-block;
+            position: relative;
+            z-index: 0;
+            }
+            #nopic {
+            display: none;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            }</style>
+    </head>
+    <body>
+        <div class="loader" style="z-index: 198910151;display: none">
+</div>  
+<div class="header header_black header_w">
+  <div class="wrapper" style="width: auto;margin: 0 70px;">
+    <div class="logo">
+                      
+                        <a href="index.htm" tppabs="http://www.yituw.com/"><img class="logo-normal" src="themes/meisu2017/imgs/logo1.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/logo1.png"/></a>
+
+                      
+    </div>
+    <div class="copyr">
+        <a href="index.htm" tppabs="http://www.yituw.com/">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="http://copyright.meisupic.com">版权登记</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a href="topic.php.htm" tppabs="http://www.yituw.com/topic.php">精选专辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="dci.php">DCI专区</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.php?action=price&from=top"><font color="#FC4349">新手套餐</font><i class="huodong_top_hot"></i></a>-->
+    </div>
+<font id="ECS_MEMBERZONE"><div id="append_parent"></div>
+ 
+<div class="nav_af">
+<ul>
+<!-- <li class='le le1'><a href="about.php?action=price">套餐价格</a></li> -->
+        <li class='le le2'><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></li>
+        <li class='le le3'><a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">购物车</a></li>
+        <li class="le le4">
+        <a href="user.php.htm" tppabs="http://www.yituw.com/user.php" class='mail'>cesh...</a>
+                    <span class='arr'></span>
+                    <div class="hdn">
+                        <dl>
+                            <dd><a href="user.php-act=order_list.htm" tppabs="http://www.yituw.com/user.php?act=order_list">我的订单</a></dd>
+                            <dd><a href="user.php-act=package.htm" tppabs="http://www.yituw.com/user.php?act=package">我的套餐</a></dd>
+                            <dd><a href="user.php-act=down_list.htm" tppabs="http://www.yituw.com/user.php?act=down_list">下载记录</a></dd>
+                            <dd><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></dd>
+                            <dd><a href="user.php-act=history_list.htm" tppabs="http://www.yituw.com/user.php?act=history_list">我的足迹</a></dd>
+                            <!--
+                            <dd><a href="user.php?act=notice">系统通知</a></dd>
+                            -->
+                            <dd><a href="user.php-act=profile.htm" tppabs="http://www.yituw.com/user.php?act=profile">账户管理</a></dd>
+                            <dd><a href="user.php-act=logout.htm" tppabs="http://www.yituw.com/user.php?act=logout" class='last'>退出</a></dd>
+                        </dl>
+                    </div>
+        </li>
+</ul>
+</div>
+ </font>
+  </div>
+</div>        <div class="toper toper_w">
+            <div class="wrapper">
+                <h2></h2><span style='font-size: 14px;line-height: 103px;padding-left: 7px;'>共 0 个搜索结果</span>
+                <div class="form">
+                    <form action="http://www.yituw.com/searchi.php" method="get" id="myform">
+                        <input class="s_clearall" type="hidden" value='' name="s_keyword" id="s_keyword" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='1' name="offset" id="s_offset" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='4' name="sort" id="s_sort" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="phototype" id="s_phototype" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="orientation" id="s_orientation" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='' name="people_only" id="s_people_only" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="race" id="s_race" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="age" id="s_age" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="gender" id="s_gender" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="quantity" id="s_quantity" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='' name="color" id="s_color" autocomplete="off">
+
+                        <input class="s_clearall" type="hidden" value='13' name="categories" id="s_categories" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="username" id="s_username" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="exclude_keyword" id="s_exclude_keyword" autocomplete="off">
+                        <input class="s_clearall" type="hidden" value='' name="image_url" id="image_url" autocomplete="off">
+                        <div class="type">
+                            <!--<h4>全部图片</h4>-->
+                            <div class="bt">
+                                <i class="n1"></i>
+                                <i class="n2"></i>
+                            </div>
+                            <select class="dropdown" onchange="changeSearch('phototypesearch',this.options[this.options.selectedIndex].value)">
+                                <option value=""  class="label">全部图片</option>
+                                <option value="" class="label">全部图片</option>
+                                <option value="photo">照片</option>
+                                <option value="vector" >矢量图</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="txt" placeholder="输入关键词" name="keyword" id="keyword" value=""  autocomplete="off"/>
+                            <input class="btn" value="" onclick="submitForm()" type="submit" />
+                                                    </div>
+                        <div id="srch_img" class="srch_img"> </div>
+                    </form>
+                    <!-- <div id="srch_img" class="srch_img"> </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="srch_head">
+            <div class="srch_head_l  srch_head_l1">
+                <ul>
+
+                    <li  class="selected" >
+                    <div class="label">
+                        <a href="javascript:changeSearch('sort',4)">热门</a>
+                    </div>
+                </li>
+                <li >
+                <div class="label">
+                    <a href="javascript:changeSearch('sort',5)">最新</a>
+                </div>
+            </li>
+        </ul>
+        <div class="f-line">
+
+        </div>
+    </div>
+    <div class="srch_head_l srch_head_l2">
+        <ul>
+            <li>
+                <select class="dropdown" id="phototype">
+                    <option value=""  class="label">全部图片</option>
+                    <option value="" class="label">全部图片</option>
+                    <option value="photo">照片</option>
+                    <option value="vector" >矢量图</option>
+                </select>
+            </li>
+            <li class="n2">
+                <select class="dropdown" id="orientation">
+                    <option value="" class="label">方向</option>
+                    <option value="" class="label">不限</option>
+                    <option value="horizontal">横向</option>
+                    <option value="vertical" >纵向</option>
+                    <option value="square" >正方</option>
+                </select>
+            </li>
+            <li>
+                <div class="tit">
+                    <span>人物</span>
+                    <i></i>
+                </div>
+                <div class="con con_user" style="display: none;">
+                    <div class="con_user_h">
+                        <div class="l">
+
+                            <input type="checkbox" name="people_only" id="people_only" value="1" onchange="javascript:changeSearch('people_only')" />
+                            <label for="people_only"></label>
+                            仅看有人物的
+                        </div>
+                        <div class="r">
+                            清除所选
+                        </div>
+                    </div>
+                    <div class="con_user_b">
+                        <dl>
+                            <dt>种族</dt>
+                            <dd><a href="javascript:changeSearch('race','asian')">亚洲人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','multi')">白人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','black')">黑人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','caucasian')">中东人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','brazilian')">巴西人</a></dd>
+                            <dd><a href="javascript:changeSearch('race','other')">其他</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd><a href="javascript:changeSearch('age','infant')">婴儿</a></dd>
+                            <dd><a href="javascript:changeSearch('age','child')">儿童</a></dd>
+                            <dd><a href="javascript:changeSearch('age','teenager')">青少年</a></dd>
+                            <dd><a href="javascript:changeSearch('age','70')">老人</a></dd>
+                            <dd><a href="javascript:changeSearch('age','20')">20+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','30')">30+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','40')">40+</a></dd>
+                            <dd><a href="javascript:changeSearch('age','50')">50+</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>性别</dt>
+                            <dd><a href="javascript:changeSearch('gender','male')">男性</a></dd>
+                            <dd><a href="javascript:changeSearch('gender','female')">女性</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>数量</dt>
+                            <dd onclick="javascript:changeSearch('quantity','1')"><a href="javascript:changeSearch('quantity','1')">1</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','2')"><a href="javascript:changeSearch('quantity','2')">2</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','3')"><a href="javascript:changeSearch('quantity','3')">3</a></dd>
+                            <dd onclick="javascript:changeSearch('quantity','any')"><a href="javascript:changeSearch('quantity','any')">4+</a></dd>
+                        </dl>
+                        <div class="btn">
+                            <input class="ui_btn" name="" id="" value="提交" onclick="submitForm()"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="tit">
+                    <span>色彩</span>
+                    <i></i>
+                </div>
+                <div class="con con_color" style="display: none;">
+                    <dl>
+                        <dt><img src="themes/meisu2017/imgs/dxm2.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/dxm2.png"/></dt>
+                        <dd><span style="background-color: #000000;" onclick="javascript:changeSearch('color','#000000')"></span></dd>
+                        <dd><span style="background-color: #ffffff;" onclick="javascript:changeSearch('color','#ffffff')"></span></dd>
+                        <dd><span style="background-color: #7a7a7a;" onclick="javascript:changeSearch('color','#7a7a7a')"></span></dd>
+                        <dd><span style="background-color: #bfbfbf;" onclick="javascript:changeSearch('color','#bfbfbf')"></span></dd>
+                        <dd><span style="background-color: #810081;" onclick="javascript:changeSearch('color','#810081')"></span></dd>
+                        <dd><span style="background-color: #ff01ff;" onclick="javascript:changeSearch('color','#ff01ff')"></span></dd>
+                        <dd><span style="background-color: #653201;" onclick="javascript:changeSearch('color','#653201')"></span></dd>
+                        <dd><span style="background-color: #7e0004;" onclick="javascript:changeSearch('color','#7e0004')"></span></dd>
+                        <dd><span style="background-color: #fe0000;" onclick="javascript:changeSearch('color','#fe0000')"></span></dd>
+                        <dd><span style="background-color: #fecd9b;" onclick="javascript:changeSearch('color','#fecd9b')"></span></dd>
+                        <dd><span style="background-color: #f9be00;" onclick="javascript:changeSearch('color','#f9be00')"></span></dd>
+                        <dd><span style="background-color: #ffff00;" onclick="javascript:changeSearch('color','#ffff00')"></span></dd>
+                        <dd><span style="background-color: #04fe00;" onclick="javascript:changeSearch('color','#04fe00')"></span></dd>
+                        <dd><span style="background-color: #027f00;" onclick="javascript:changeSearch('color','#027f00')"></span></dd>
+                        <dd><span style="background-color: #01ffff;" onclick="javascript:changeSearch('color','#01ffff')"></span></dd>
+                        <dd><span style="background-color: #0005fd;" onclick="javascript:changeSearch('color','#0005fd')"></span></dd>
+                        <dd><span style="background-color: #00007c;" onclick="javascript:changeSearch('color','#00007c')"></span></dd>
+
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <div class="tit tit_more">
+                    <span>更多条件</span>
+                    <i></i>
+                </div>
+                <div class="con con_more" style="display: none;">
+                    <dl>
+                        <dd>
+                            <label>类别</label>
+                            <select class="dropdown" onchange="changeSearch('categories',this.options[this.options.selectedIndex].value)">
+                                                                <option value="6">抽象</option>
+                                                                <option value="7">动物</option>
+                                                                <option value="8">房屋建筑</option>
+                                                                <option value="9">艺术品</option>
+                                                                <option value="10">美丽和时尚</option>
+                                                                <option value="11">商业/金融</option>
+                                                                <option value="12">名人</option>
+                                                                <option value="13">城市</option>
+                                                                <option value="14">电脑/电子产品</option>
+                                                                <option value="15">概念/观点</option>
+                                                                <option value="16">装饰</option>
+                                                                <option value="17">教育</option>
+                                                                <option value="18">动物&植物 </option>
+                                                                <option value="19">饮食</option>
+                                                                <option value="20">节日/事件</option>
+                                                                <option value="21">插图</option>
+                                                                <option value="22">工业</option>
+                                                                <option value="23">室内装饰</option>
+                                                                <option value="24">首饰/宝石</option>
+                                                                <option value="25">医疗和健康</option>
+                                                                <option value="26">杂项</option>
+                                                                <option value="27">物体</option>
+                                                                <option value="28">其它</option>
+                                                                <option value="29">人物</option>
+                                                                <option value="30">地方</option>
+                                                                <option value="31">宗教</option>
+                                                                <option value="32">科学</option>
+                                                                <option value="33">购物</option>
+                                                                <option value="34">符号及标志</option>
+                                                                <option value="35">运动</option>
+                                                                <option value="36">科技</option>
+                                                                <option value="37">纹理和背景</option>
+                                                                <option value="38">工具</option>
+                                                                <option value="39">运输及车辆</option>
+                                                                <option value="41">复古与怀旧</option>
+                                                                <option value="42">大自然</option>
+                                                                <option value="43">旅游</option>
+                                                                <option value="44">职业</option>
+                                                            </select>
+                        </dd>
+                        <dd>
+                            <label>
+                                <div class="wrap">
+                                    <em class="em1"></em>
+                                    <div class="wrap_txt">
+                                        <i class="i1"></i>
+                                        <p class="p1">通过输入用户名或昵称，您可以快速找到您关注的供稿人（如果此信息在供稿人的公开档案中）</p>
+                                        <p class="p2 mt10">示例说明：</p>
+                                        <p class="p2 mt10">输入用户名“Limiesuser”或者昵称“李亿图视觉”，将会获得供稿人“Limiesuser
+                                            /李亿图视觉”的供稿专辑链接，点击链接可以直接查看该供稿人的所有作品文件
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <div class="hd">
+                                                    Limeisuser <span>|</span>
+                                                </div>
+                                                <div class="bd">
+                                                    <div class="img">
+                                                        <img src="themes/meisu2017/imgs/img79.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img79.jpg"/>
+                                                    </div>
+                                                    <div class="tx">
+                                                        <h4>Limeisuser  /  李亿图视觉</h4>
+                                                        <h4>作品  18926</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h6>  或</h6>
+                                            </li>
+                                            <li>
+                                                <div class="hd">
+                                                    Limeisuser <span>|</span>
+                                                </div>
+                                                <div class="bd">
+                                                    <div class="img">
+                                                        <img src="themes/meisu2017/imgs/img79.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img79.jpg"/>
+                                                    </div>
+                                                    <div class="tx">
+                                                        <h4>Limeisuser  /  李亿图视觉</h4>
+                                                        <h4>作品  18926</h4>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                供稿人</label>
+                            <input type="text" name="username" id="username" class="txt" value="" placeholder="请输入供稿人名称" />
+                            <em class="em_img" style="display: none;"></em>
+
+                        </dd>
+                        <dd>
+                            <label>
+                                <div class="wrap">
+                                    <em class="em2"></em>
+                                    <div class="wrap_txt">
+                                        <i class="i2"></i>
+                                        <p class="p1">排除关键字可以帮您更精准的定位搜索结果</p>
+                                        <p class="p1">使用逗号、分号或空格将多个关键字或者词语分开</p>
+                                        <p class="p1 mt10">示例说明：</p>
+                                        <p class="p2 mt10">在搜索框内输入“科技”，在排除关键字框内输入“电脑”，
+                                            搜索结果中就会出现带有关键字“科技”
+                                            但是不带关键字“电脑”的图片或素材
+                                        </p>
+                                        <p class="p1 mt10">输入样式举例：</p>
+                                        <p class="p2 mt10">电脑   书桌    水杯</p>
+                                        <p class="p2">电脑   书桌    水杯</p>
+                                        <p class="p2">电脑   书桌    水杯</p>
+                                    </div>
+                                </div>
+
+                                排除关键字</label>
+                            <input type="text" name="exclude_keyword" class="txt" id="exclude_keyword" value="" placeholder="多个关键字可用空格分开" />
+                            <em class="em_img" style="display: none;"></em>
+
+
+                        </dd>
+                    </dl>
+                    <div class="btn">
+                        <input class="ui_btn" name="" id="" value="提交" onclick="submitForm()" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="srch_head_r">
+        <label>共0页</label>
+        <ul>
+                        <li class="prev"><a href="javascript:void(0)"></a></li>
+                        <li><input type="text" class="sr" name="pagenowt" id="pagenowt" value="1" />
+                        <li class="next"><a href="javascript:void(0)"></a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="label_wrap">
+<dl>
+                <dd id="ss_categories" sname="s_categories">
+        分类：城市<em></em>
+    </dd>
+        
+    <dt>
+        清除筛选项
+    </dt>
+    </dl>
+</div>
+        <div class="search_nocontent">
+<div class="ico">
+    <img src="themes/meisu2017/imgs/sorry.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/sorry.png">
+</div>
+<div class="txt">
+    <h2>对不起，我们没有找到任何结果</h2>
+    <p>您可以尝试变换您的关键词、清除已选择的筛选条件以找到更多的结果，或联系客服</p>
+</div>
+</div>
+
+
+
+
+        
+<script type="text/javascript">
+    var goods = new Object();
+</script>
+
+        <div class="h_foot">
+  <div class="wrapper">
+    <div class="txt">
+            还没找到想要的正版图片？来探索亿图视觉世界吧！ 
+    </div>
+    <div class="form">
+      <form id="footform" action="http://www.yituw.com/searchi.php" method="get">
+        <input type="text" class="txt1" name="keyword" id="" value="" placeholder="搜索照片、矢量图和插画，支持双语哦"   autocomplete="off"/>
+        <input type="submit" class="btn" value=""/>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="index.htm" tppabs="http://www.yituw.com/"><img src="themes/meisu2017/imgs/f_logo.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/f_logo.png"></a>
+      <!-- <h4><a href="http://www.huaban.com">回到亿图</a></h4>-->
+    </div>
+    <div class="nav">
+      <dl>
+        <dd><a href="about.php-action=company.htm" tppabs="http://www.yituw.com/about.php?action=company">关于我们</a></dd>
+        <!-- <dd><a href="about.php?action=price" >价格体系</a></dd>-->
+        <dd><a href="about.php-action=contact-us.htm" tppabs="http://www.yituw.com/about.php?action=contact-us" >联系我们</a></dd>
+      </dl>
+      <dl>
+        <dd><a href="about.php-action=copyright-standar.htm" tppabs="http://www.yituw.com/about.php?action=copyright-standar" >版权说明</a></dd>
+        <dd><a href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms" >服务条款</a></dd>
+        <dd><a href="about.php-action=questions.htm" tppabs="http://www.yituw.com/about.php?action=questions" >常见问题</a></dd>
+      </dl>
+    </div>
+    <div class="qrimg">
+      <!--<div class="img">
+        <img src="themes/meisu2017/imgs/er.jpg">
+      </div>-->
+      <div class="txt">
+        <div class="qq">
+          <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">在线客服</a>
+        </div>
+        <h4>15910897940<br>
+        Email: zanggong@yituw.com</h4>
+      </div>
+    </div>
+    <!--<div class="link">
+      <h4>申请版权登记，让原创更有价值</h4>
+            <a href="http://copyright.meisupic.com/">版权登记入口</a>
+    </div>-->
+  </div>
+    <div class="copyright">
+    <span></span>
+    Copyright ©2017 北京亿图视讯科技有限公司版权所有 京ICP备17042338号
+  </div>
+</div>
+
+
+
+<div id="login_wrap" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>登录</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_LOGINFORM" name="ECS_LOGINFORM" method="post">
+    <!--
+    <h4 class="mt15"><a href="user.php?act=hbauth" class="huaban_login">点击此处用花瓣帐号登录</a></h4>
+    -->
+    <div class="login_form">
+      <input type="text" name="login_username" id="login_username" placeholder="手机号"/>
+      <input type="password" name="login_password" id="login_password"  placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="login_remember" name="login_remember">
+        <label for="login_remember"></label>
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="user.php-act=sms_get_password_1.htm" tppabs="http://www.yituw.com/user.php?act=sms_get_password_1">忘记密码？</a></span>
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="javascript:signIn()">登录</a>
+    </div>
+  </form>
+    <p>还没有账号？<a href="#" class="zhuce">马上注册</a></p>
+  </div>
+</div>
+
+
+<div id="login_wrap_bf" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>请登录后再进行收藏或购买</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <h4 class="mt15">您可以使用花瓣网账号和密码直接登录</h4>
+    <div class="login_form">
+      <input type="text" placeholder="手机号/花瓣网账号"/>
+      <input type="password" placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="check5">
+        <label for="check5"></label>
+        
+        
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="">忘记密码？</a></span>　　　
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="#">登录</a>
+    </div>
+    
+    <p>还没有账号？<a href="#" class="zhuce" >马上注册</a></p>
+  </div>
+</div>
+
+
+<div id="register_wrap" class="d_none">
+  <div class="login_wrap register_wrap">
+    <em></em>
+    <div class="head">
+      <h2>注册</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="reg_mobile_drag" class="txt" id="reg_mobile_drag" value="" placeholder="手机号" autocomplete="off" /></li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn1" id="" value="" />
+          <input type="text" name="" class="txt txt1" value="" placeholder="按住滑块，拖动到最右边"  />
+        </li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn2" id="" value="" />
+          <input type="text" name="" class="txt txt2"  value="验证通过"   />
+        </li>
+        <li>
+          <div id="drag"></div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mt40 btn d_none" id="div_regs">
+      <a href="javascript:void(0)" id="regs">立即注册</a>
+    </div>
+    
+    <p>已有账号？<a href="#" class="denglu" >马上登录</a></p>      
+    
+  </div>
+</div>
+
+
+
+
+
+
+<div id="reg_wrap" class="d_none">
+  <div class="login_wrap register_wrap02">
+    <em></em>
+    <div class="head">
+      <h2>欢迎来到亿图视觉</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_REGFORM" name="ECS_REGFORM" method="post">
+        <input id="agreement" name="agreement" value="1" type="checkbox" hidden="">
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="extend_field5" class="txt" id="extend_field5" value="" placeholder="请输入手机号" maxlength="11" /></li>
+        <!-- <li><input type="text" name="sms_code" class="txt txt01" id="sms_code" value="" placeholder="手机验证码" style="border-right: 0;width: 216px !important" maxlength="6" />
+        <input type="button" id="getcode" name="" class="btn_n" id="" value="获取验证码" />
+        
+        </li>
+        -->
+        <li><input type="text" name="extend_field102" class="txt" id="extend_field102" value="" placeholder="昵称（必填）" maxlength="20" /></li>
+        <li><input type="password" name="password" class="txt" id="password" value="" placeholder="密码"  maxlength="20" /></li>
+        <li><input type="password" name="confirm_password" class="txt" id="confirm_password" value="" placeholder="确认密码"  maxlength="20" /></li>
+        
+      </ul>
+    </div>
+    </form>
+    <div class="label">
+      <input id="checkbox1" name="checkbox" value="" type="checkbox" checked>
+      <label for="checkbox1"></label>
+      我已阅读并同意<a style="color: #FC4349" target="_blank" href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms">《服务条款》</a>
+    </div>
+    
+    <div class="mt40 btn">
+      <a href="javascript:ajax_register()">提交</a>
+    </div>  
+  </div>
+</div>
+
+<div id="srchimg_wrap_fa" style="display: none;">
+  <div class="srchimg_wrap srchimg_wrap_fa">
+  
+       <div class="head">
+        <ul>
+                       <li>
+            <input style="" name="searchtype_fa" id="searchtype_fa_115" value="115" type="radio" autocomplete="off"><label for="searchtype_fa_115"><i></i></label>不保存(0)
+            </li>
+           
+        </ul>     
+       </div>
+       <div class="body"  >        
+        <input type="submit" name="" id="fa_submit" class="btn" value="确定" onclick="" />      
+       </div>
+  </div>
+</div>
+
+
+
+<div id="srchimg_wrap" style="display: none;">
+  <div class="srchimg_wrap">
+  <form id="ECS_SEARCHBYIMG" name="ECS_SEARCHBYIMG" action="http://www.yituw.com/searchi.php" method="post"  enctype="multipart/form-data">
+       <div class="head">
+        <ul>
+          <li class="selected">
+            <input name="searchtype" checked="checked" value="1" id="searchtype_1"  type="radio" autocomplete="off"><label for="searchtype_1"><i></i></label>按链接地址　
+          </li>
+          <li>
+            <input name="searchtype" value="2" id="searchtype_2"  type="radio" autocomplete="off"><label for="searchtype_2"><i></i></label>上传图片　
+          </li>
+        </ul>     
+       </div>
+       <div class="body"  >
+        <input type="text" name="image_url" id="" class="txt" value="" placeholder="黏贴图片URL" />        
+        <input type="submit" name="" id="" class="btn" value="搜索" onclick="dialog('搜索结果加载中...',2);" />      
+       </div>
+       
+       <div class="body" style="display: none;" >
+          <div class="upload">
+            <div class="ico">
+              
+            </div>
+            <h4>选择搜索图片</h4>
+            <input type="file" name="searchimg" class="file"  id="searchimg" value="" onchange="this.form.submit();dialog('搜索结果加载中...',2);" />
+          </div>  
+       </div> 
+       </form>     
+  </div>
+</div>
+<div class="sidebar">
+  <ul>
+    <a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">
+      <li class='n1'></li>
+    </a>
+    <a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">
+      <li class='n2'></li>
+    </a>
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">
+      <li class='n3' title="在线咨询"></li>
+    </a>
+    <a href="#all_toper">
+      <li class='n4'></li>
+    </a>
+  </ul>
+</div>
+
+
+<div id="forward_wap" class="d_none">
+  <div class="forward_wap">
+    <h4 class="del_txt">我们的图片购买功能还没正式开放哦，为表示歉意，奉上7折优惠码一枚。请您8月份再来体验！</h4>
+    <div class="body">
+      <ul>
+        <li><input type="text" name="forward_name" class="txt" id="forward_name" value="" placeholder="姓名或公司名称" /></li>
+        <li><input type="text" name="forward_tel" class="txt txt01" id="forward_tel" value="" placeholder="手机号" />
+        <li><input type="text" name="forward_mail" class="txt" id="forward_mail" value="" placeholder="邮箱" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<input type="hidden" id="hidden_reg_mobile_drag" value="">
+<script type="text/javascript" src="themes/meisu2017/js/jquery-1.7.2.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.glide.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.glide.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/layer.js" tppabs="http://www.yituw.com/themes/meisu2017/js/layer.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.easydropdown.min.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.easydropdown.min.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.poshytip.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.poshytip.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.row-grid.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.row-grid.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/script.js-v=4.js" tppabs="http://www.yituw.com/themes/meisu2017/js/script.js?v=4"></script>
+<script type="text/javascript" src="themes/meisu2017/js/dialog.js" tppabs="http://www.yituw.com/themes/meisu2017/js/dialog.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/gy.js" tppabs="http://www.yituw.com/themes/meisu2017/js/gy.js"></script>
+<script src="themes/meisu2017/three/drag.js" tppabs="http://www.yituw.com/themes/meisu2017/three/drag.js" type="text/javascript"></script>
+<script src="themes/meisu2017/js/photo.js" tppabs="http://www.yituw.com/themes/meisu2017/js/photo.js" type="text/javascript"></script>
+<!-- <script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=1245" async="async" defer="defer"></script> -->
+
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = '../static.meiqia.com/dist/meiqia.js-_=t.js'/*tpa=https://static.meiqia.com/dist/meiqia.js?_=t*/;
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 115890);
+</script><script type="text/javascript">
+window.onscroll = function(){
+getSearchIds();
+showItems();
+}
+var show_array = []; // 显示的所有pids
+var send_status = 1; // 发送状态 默认允许发
+
+function getSearchIds(){
+
+var items = $(".imgList").find(".imgItem");
+var len = items.length;
+var start = 0;
+
+for (var i=start; i < len ; i++ ){
+var elem = items[i];
+if($(elem).offset().top <= $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+
+var img = $(elem).find("img");
+var pid = $(img).parent().attr("data-id");
+var is_has = show_array.indexOf(pid);
+if(is_has < 0)
+{
+show_array.push(pid);
+}
+start = i;
+send_status = 0;
+}
+else{
+if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+send_status = 1;
+break;
+}
+}
+}
+// 解决只有一排数据不发送的问题
+if(len <= 5 && len > 0)
+{
+send_status = 1;
+}
+}
+function showItems(){
+
+var items = $(".imgList").find(".imgItem");
+var len = items.length;
+var start = 0;
+
+for (var i=start; i < len ; i++ ){
+var elem = items[i];
+if($(elem).offset().top < $(window).height()+$(window).scrollTop() && $(elem).offset().top+$(elem).outerHeight() > $(window).scrollTop()){
+
+var img = $(elem).find("img");
+if (!$(img).attr("src")){
+$(img).attr("src",$(img).attr("data-original")).fadeIn();
+start = i;
+}
+}
+else{
+if ($(elem).offset().top > $(window).height()+$(window).scrollTop()){
+break;
+}
+}
+}
+
+}
+
+function setPiclistSize(){
+$("#goods-img-list").Huiphoto({
+wraperWidth:"auto",
+item:".imgItem",
+margin:50,
+extra:0
+});
+}
+function setTopicPiclistSize(){
+$("#topic-img-list").Huiphoto({
+wraperWidth:"auto",
+item:".item",
+minHeight: 200 ,
+margin:50,
+extra:0,
+});
+}
+
+$(function(){
+setPiclistSize();
+setTopicPiclistSize();
+showItems();
+$(window).resize(function() {
+setPiclistSize();
+setTopicPiclistSize();
+});
+});
+</script>
+        </body>
+        </html>
+
+<script type="text/javascript" src="themes/meisu2017/js/jquery.lazyload.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+
+
+ $(function() {
+
+      //$("http://www.yituw.com/img.lazy").lazyload({placeholder:"../imgs.126306.com/upload/20150730/212003_3750.gif"/*tpa=http://imgs.126306.com/upload/20150730/212003_3750.gif*/});
+
+      //加载完第一页的时候，自动加载第二页的，只生成缓存
+      var param = GetUrlPara();
+
+
+      var url = "/search_cache.php?"+param+"&offset="+(parseInt($('#s_offset').val())+1);
+      //alert(url);
+
+      Ajax.call(url, '', 'GET', 'JSON');
+
+      $('#fa_submit').click(function(e){
+        
+            goods.class_id = $('input:radio[name="searchtype_fa"]:checked').val();
+            //loading(1);
+            $.get("http://www.yituw.com/user.php?act=collect",{goods_sn:goods.goods_sn,class_id:goods.class_id},
+                function(data){
+                //loading(2); 
+                  if(data.error=='0' ){
+                    dialog(data.message,2);
+                  }
+                  else if(data.error=='11'){
+                    //window.location.href="user.php.htm"/*tpa=http://www.yituw.com/user.php?act=login*/;
+                    dialog(data.message,2);
+                  }
+                  else if(data.error=='10'){
+                    //window.location.href="user.php.htm"/*tpa=http://www.yituw.com/user.php?act=login*/;
+                    $("#login").click();
+                  }
+                },"json");
+            
+        })
+
+  });
+
+function GetUrlPara()
+{
+    var url = document.location.toString();
+    var arrUrl = url.split("?");
+    var para = arrUrl[1];
+    return para;
+}
+
+</script>
+
+
+

@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="ECSHOP v3.6.0" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+
+<title>用户中心_亿图视觉</title>
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/slicy.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/glide.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/easydropdown.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/jquery-ui.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/style.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/lf_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/dxm_style.css" />
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/css.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/css/responsive.css">
+<link rel="stylesheet" href="../yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css" tppabs="http://yituwstatic.oss-cn-beijing.aliyuncs.com/themes/meisu2017/three/drag.css">
+
+<link rel="shortcut icon" href="favicon.ico" tppabs="http://www.yituw.com/favicon.ico" />
+<link rel="icon" href="animated_favicon.gif.css" tppabs="http://www.yituw.com/animated_favicon.gif" type="image/gif" />
+
+<script type="text/javascript" src="js/transport.js" tppabs="http://www.yituw.com/js/transport.js"></script><script type="text/javascript" src="js/common.js" tppabs="http://www.yituw.com/js/common.js"></script><script type="text/javascript" src="js/user.js" tppabs="http://www.yituw.com/js/user.js"></script><script type="text/javascript" src="js/utils.js" tppabs="http://www.yituw.com/js/utils.js"></script><script type="text/javascript">
+                      var bonus_sn_empty = "请输入您要添加的红包号码！";
+                      var bonus_sn_error = "您输入的红包号码格式不正确！";
+                      var email_empty = "请输入您的电子邮件地址！";
+                      var email_error = "您输入的电子邮件地址格式不正确！";
+                      var old_password_empty = "请输入您的原密码！";
+                      var new_password_empty = "请输入您的新密码！";
+                      var confirm_password_empty = "请输入您的确认密码！";
+                      var both_password_error = "您现两次输入的密码不一致！";
+                      var msg_blank = "不能为空";
+                      var no_select_question = "- 您没有完成密码提示问题的操作";
+                  </script>
+
+</head>
+<body>
+<div class="loader" style="z-index: 198910151;display: none">
+</div>  
+<div class="header header_black">
+  <div class="wrapper">
+  <div class="logo">
+                      
+                                <a href="index.htm" tppabs="http://www.yituw.com/"><img class="logo-normal" src="themes/meisu2017/imgs/logo1.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/logo1.png"/></a>
+
+                          </div>
+    <div class="copyr">
+       <a href="index.htm" tppabs="http://www.yituw.com/">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a href="http://copyright.meisupic.com">版权登记</a>-->
+       &nbsp;&nbsp;&nbsp;&nbsp;<a href="topic.php.htm" tppabs="http://www.yituw.com/topic.php">精选专辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a href="dci.php">DCI专区</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="about.php?action=price&from=top"><font color="#FC4349">新手套餐</font><i class="huodong_top_hot"></i></a> -->
+    </div>
+      <font id="ECS_MEMBERZONE"><div id="append_parent"></div>
+ 
+<div class="nav_af">
+<ul>
+<!-- <li class='le le1'><a href="about.php?action=price">套餐价格</a></li> -->
+        <li class='le le2'><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></li>
+        <li class='le le3'><a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">购物车</a></li>
+        <li class="le le4">
+        <a href="user.php.htm" tppabs="http://www.yituw.com/user.php" class='mail'>cesh...</a>
+                    <span class='arr'></span>
+                    <div class="hdn">
+                        <dl>
+                            <dd><a href="user.php-act=order_list.htm" tppabs="http://www.yituw.com/user.php?act=order_list">我的订单</a></dd>
+                            <dd><a href="user.php-act=package.htm" tppabs="http://www.yituw.com/user.php?act=package">我的套餐</a></dd>
+                            <dd><a href="user.php-act=down_list.htm" tppabs="http://www.yituw.com/user.php?act=down_list">下载记录</a></dd>
+                            <dd><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">收藏夹</a></dd>
+                            <dd><a href="user.php-act=history_list.htm" tppabs="http://www.yituw.com/user.php?act=history_list">我的足迹</a></dd>
+                            <!--
+                            <dd><a href="user.php?act=notice">系统通知</a></dd>
+                            -->
+                            <dd><a href="user.php-act=profile.htm" tppabs="http://www.yituw.com/user.php?act=profile">账户管理</a></dd>
+                            <dd><a href="user.php-act=logout.htm" tppabs="http://www.yituw.com/user.php?act=logout" class='last'>退出</a></dd>
+                        </dl>
+                    </div>
+        </li>
+</ul>
+</div>
+ </font>
+  </div>
+</div>
+<div class="toper">
+  <div class="wrapper">
+    <h2>探索亿图视觉世界！</h2>
+    <div class="form">
+      <form action="http://www.yituw.com/searchi.php" method="get" id="myform">
+      <input class="s_clearall" type="hidden" value='' name="offset" id="s_offset">
+      <input class="s_clearall" type="hidden" value='' name="sort" id="s_sort">
+      <input class="s_clearall" type="hidden" value='' name="phototype" id="s_phototype">
+      <input class="s_clearall" type="hidden" value='' name="orientation" id="s_orientation">
+
+      <input class="s_clearall" type="hidden" value='' name="people_only" id="s_people_only">
+      <input class="s_clearall" type="hidden" value='' name="race" id="s_race">
+      <input class="s_clearall" type="hidden" value='' name="age" id="s_age">
+      <input class="s_clearall" type="hidden" value='' name="gender" id="s_gender">
+      <input class="s_clearall" type="hidden" value='' name="quantity" id="s_quantity">
+
+      <input class="s_clearall" type="hidden" value='' name="color" id="s_color">
+
+      <input class="s_clearall" type="hidden" value='' name="categories" id="s_categories">
+      <input class="s_clearall" type="hidden" value='' name="username" id="s_username">
+      <input class="s_clearall" type="hidden" value='' name="exclude_keyword" id="s_exclude_keyword">
+        <div class="type">
+          <!--<h4>全部图片</h4>-->
+          <div class="bt">
+            <i class="n1"></i>
+            <i class="n2"></i>
+          </div>
+          <select class="dropdown" onchange="changeSearch('phototypesearch',this.options[this.options.selectedIndex].value)">
+                 <option value="" class="label">全部图片</option>
+                 <option value="" class="label">全部图片</option>
+                   <option value="photo">照片</option>
+                 <option value="vector" >矢量图</option>  
+             </select>
+        </div>
+        <div class="input">
+          <input type="text" class="txt" placeholder="输入关键词" name="keyword" id="keyword" value="" autocomplete="off"/>
+          <input onclick="submitForm()" class="btn" value="" type="submit" />
+        </div>
+        <div id="srch_img" class="srch_img"> </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="pt40 pb150 center_wrap">
+  <div class="wrapper">
+    <div class="head">
+      <ul class="naver">
+        <li><a href="user.php.htm" tppabs="http://www.yituw.com/user.php">我的首页</a></li>
+        <li><a href="user.php-act=order_list.htm" tppabs="http://www.yituw.com/user.php?act=order_list">我的订单</a></li>
+        <li class="c1"><a href="user.php-act=package.htm" tppabs="http://www.yituw.com/user.php?act=package">我的套餐</a></li>
+        <li><a href="user.php-act=down_list.htm" tppabs="http://www.yituw.com/user.php?act=down_list">下载记录</a></li>
+        <li><a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">我的收藏</a></li>
+        <li><a href="user.php-act=history_list.htm" tppabs="http://www.yituw.com/user.php?act=history_list">我的足迹</a></li>
+        <li class="last"><a href="user.php-act=profile.htm" tppabs="http://www.yituw.com/user.php?act=profile">账户管理</a></li>       
+      </ul>
+            <div class="avatar">
+        <a href="javascript:void(0)">
+          <div class="img"  id="changeavatar">
+            <img src="themes/meisu2017/imgs/img18.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img18.jpg"/>
+            <div class="mk">
+              点击修改
+            </div>
+          </div>
+          <h4>ceshi <!--  <span>关注</span> --></h4>       
+        </a>
+      </div>
+    </div>
+    
+    <div class="body user_home user_package"> 
+        <div class="item table">
+      
+        <div class="bd">
+          <table class="ui_table" width="100%" border="0" cellspacing="0">
+            <tr class="frist">
+              <td width="132" height="58" align="center">套餐名称<span>|</span></td>
+              <td width="97" height="58" align="center">账户角色<span>|</span></td>
+              <td width="137" height="58" align="center">套餐内图片总数<span>|</span></td>
+              <td width="112" height="58" align="center">已下载<span>|</span></td>
+              <td width="112" height="58" align="center">已分配<span>|</span></td>
+              <td width="113" height="58" align="center">可下载<span>|</span></td>
+              <td width="157" height="58" align="center">过期时间</td>
+            </tr>
+                        <tr>
+              <td height="70" align="center">100张</td>
+              <td height="70" align="center">主账户</td>
+              <td height="70" align="center">100</td>
+              <td height="70" align="center">2</td>
+              <td height="70" align="center">0</td>
+              <td height="70" align="center">98</td>
+              <td height="70" align="center">2022-02-21</td>
+            </tr>
+                                  </table>
+        </div>
+      </div>
+        </div>
+    
+  </div>
+</div>
+<div class="h_foot">
+  <div class="wrapper">
+    <div class="txt">
+            还没找到想要的正版图片？来探索亿图视觉世界吧！ 
+    </div>
+    <div class="form">
+      <form id="footform" action="http://www.yituw.com/searchi.php" method="get">
+        <input type="text" class="txt1" name="keyword" id="" value="" placeholder="搜索照片、矢量图和插画，支持双语哦"   autocomplete="off"/>
+        <input type="submit" class="btn" value=""/>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="#"><img src="themes/meisu2017/imgs/f_logo.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/f_logo.png"/></a>
+      <!--<h4><a href="http://www.huaban.com">回到亿图</a></h4>-->
+    </div>
+    <div class="nav">
+      <dl>
+        <dd><a href="about.php-action=company.htm" tppabs="http://www.yituw.com/about.php?action=company">关于我们</a></dd>
+<!--        <dd><a href="about.php?action=price">价格体系</a></dd> -->
+        <dd><a href="about.php-action=contact-us.htm" tppabs="http://www.yituw.com/about.php?action=contact-us">联系我们</a></dd>
+      </dl>
+      <dl>
+        <dd><a href="about.php-action=copyright-standar.htm" tppabs="http://www.yituw.com/about.php?action=copyright-standar" >版权说明</a></dd>
+        <dd><a href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms" >服务条款</a></dd>
+        <dd><a href="about.php-action=questions.htm" tppabs="http://www.yituw.com/about.php?action=questions">常见问题</a></dd>
+      </dl>
+    </div>
+    <div class="qrimg">
+      <!--<div class="img">
+        <img src="themes/meisu2017/imgs/er.jpg"/>
+      </div>-->
+      <div class="txt">
+        <div class="qq">
+          <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">在线客服</a>
+        </div>
+        <h4>15910897940<br/>
+        Email: zanggong@yituw.com</h4>
+      </div>
+    </div>
+    <!--<div class="link">
+      <h4>申请版权登记，让原创更有价值</h4>
+      <a href="http://copyright.meisupic.com/">版权登记入口</a>
+    </div>-->
+  </div>
+    <div class="copyright">
+    <span></span>
+    Copyright ©2017 北京亿图视讯科技有限公司版权所有 京ICP备17042338号
+  </div>
+</div>
+
+
+<div id="picture_dialog" class="d_none">
+  <div class="picture_dialog">
+    <div class="item item01">
+      <h4>标准授权包含的应用领域有：</h4>
+      <p>数字用途：网站、微博、微信、电邮等</p>
+      <p>线下印刷：宣传页、海报、报纸杂志、包装等。</p>
+    </div>
+    <div class="item item02">
+      <h4>扩展授权额外包含以下授权领域：</h4>
+      <p>户外广告（楼宇、车身、灯箱、围挡、橱窗、户外广告牌）</p>
+      <p>转售设计模板（软件/程序）APP皮肤/主题</p>
+      <p>转售品（纺织品、手机壳、贺卡、明信片等)</p>
+    </div>
+    <div class="foot">
+      <p>扩展授权的价格：每张500元，如需购买，请联系在线客服，或者致电 15910897940</p>
+        <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">联系在线客服</a>
+    </div>
+  </div>
+</div>
+
+<div id="big_img" class="d_none">
+  <div class="big_img">
+    <em></em>
+    <img src="themes/meisu2017/imgs/img63.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img63.jpg"/>
+  </div>
+</div>
+
+<div id="srchimg_wrap" style="display: none;">
+  <div class="srchimg_wrap">
+  <form id="ECS_SEARCHBYIMG" name="ECS_SEARCHBYIMG" action="http://www.yituw.com/searchi.php" method="post"  enctype="multipart/form-data">
+       <div class="head">
+        <ul>
+          <li class="selected">
+            <input name="searchtype" checked="checked" value="1" id="searchtype_1"  type="radio" autocomplete="off"><label for="searchtype_1"><i></i></label>按链接地址　
+          </li>
+          <li>
+            <input name="searchtype" value="2" id="searchtype_2"  type="radio" autocomplete="off"><label for="searchtype_2"><i></i></label>上传图片　
+          </li>
+        </ul>     
+       </div>
+       <div class="body"  >
+        <input type="text" name="image_url" id="" class="txt" value="" placeholder="黏贴图片URL" />        
+        <input type="submit" name="" id="" class="btn" value="搜索" onclick="dialog('搜索结果加载中...',2);" />      
+       </div>
+       
+       <div class="body" style="display: none;" >
+          <div class="upload">
+            <div class="ico">
+              
+            </div>
+            <h4>选择搜索图片</h4>
+            <input type="file" name="searchimg" class="file"  id="searchimg" value="" onchange="this.form.submit();dialog('搜索结果加载中...',2);" />
+          </div>  
+       </div> 
+       </form>     
+  </div>
+</div>
+
+
+<div id="login_wrap" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>登录</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_LOGINFORM" name="ECS_LOGINFORM" method="post">
+    <!--
+    <h4 class="mt15"><a href="user.php?act=hbauth" class="huaban_login">点击此处用花瓣帐号登录</a></h4>
+    -->
+    <div class="login_form">
+      <input type="text" name="login_username" id="login_username" placeholder="手机号"/>
+      <input type="password" name="login_password" id="login_password"  placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="login_remember" name="login_remember">
+        <label for="login_remember"></label>
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="user.php-act=sms_get_password_1.htm" tppabs="http://www.yituw.com/user.php?act=sms_get_password_1">忘记密码？</a></span>
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="javascript:ajax_signIn()">登录</a>
+    </div>
+  </form>
+    <p>还没有账号？<a href="#" class="zhuce">马上注册</a></p>
+
+    
+  </div>
+</div>
+
+
+<div id="login_wrap_bf" class="d_none">
+  <div class="login_wrap">
+    <em></em>
+    <div class="head">
+      <h2>请登录后再进行收藏或购买</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <h4 class="mt15">您可以使用花瓣网账号和密码直接登录</h4>
+    <div class="login_form">
+      <input type="text" placeholder="手机号/花瓣网账号"/>
+      <input type="password" placeholder="登录密码"/>
+      <div class="rem">
+        <input name="checkbox"  type="checkbox" value="" id="check5">
+        <label for="check5"></label>
+        
+        
+        <span class='lt'>记住密码</span>　
+        <span class='rg'><a href="">忘记密码？</a></span>　　　
+      </div>
+    </div>
+    <div class="mt200 btn">
+      <a href="#">登录</a>
+    </div>
+    
+    <p>还没有账号？<a href="#" class="zhuce" >马上注册</a></p>
+
+    
+  </div>
+</div>
+
+
+<div id="register_wrap" class="d_none">
+  <div class="login_wrap register_wrap">
+    <em></em>
+    <div class="head">
+      <h2>注册</h2>
+      <span class="ui_line red"></span>
+    </div>
+    
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="reg_mobile_drag" class="txt" id="reg_mobile_drag" value="" placeholder="手机号" autocomplete="off" /></li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn1" id="" value="" />
+          <input type="text" name="" class="txt txt1" value="" placeholder="按住滑块，拖动到最右边"  />
+        </li>
+        <li class="d_none">
+          <input type="button" name="" class="btn btn2" id="" value="" />
+          <input type="text" name="" class="txt txt2"  value="验证通过"   />
+        </li>
+        <li>
+          <div id="drag"></div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mt40 btn d_none" id="div_regs">
+      <a href="javascript:void(0)" id="regs">立即注册</a>
+    </div>
+    
+    <p>已有账号？<a href="#" class="denglu" >马上登录</a></p>      
+    
+  </div>
+</div>
+
+
+<div id="reg_wrap" class="d_none">
+  <div class="login_wrap register_wrap02">
+    <em></em>
+    <div class="head">
+      <h2>欢迎来到亿图视觉</h2>
+      <span class="ui_line red"></span>
+    </div>
+    <form id="ECS_REGFORM" name="ECS_REGFORM" method="post">
+        <input id="agreement" name="agreement" value="1" type="checkbox" hidden="">
+    <div class="mt40 body">
+      <ul>
+        <li><input type="text" name="extend_field5" class="txt" id="extend_field5" value="" placeholder="请输入手机号" maxlength="11" /></li>
+        <!--
+        <li><input type="text" name="sms_code" class="txt txt01" id="sms_code" value="" placeholder="手机验证码" style="border-right: 0;width: 216px !important" maxlength="6" />
+        <input type="button" id="getcode" name="" class="btn_n" id="" value="获取验证码" />
+        
+        </li>
+        -->
+        <li><input type="text" name="extend_field102" class="txt" id="extend_field102" value="" placeholder="昵称（必填）" maxlength="20" /></li>
+        <li><input type="password" name="password" class="txt" id="password" value="" placeholder="密码"  maxlength="20" /></li>
+        <li><input type="password" name="confirm_password" class="txt" id="confirm_password" value="" placeholder="确认密码"  maxlength="20" /></li>
+        
+      </ul>
+    </div>
+    </form>
+    <div class="label">
+      <input id="checkbox1" name="checkbox" value="" type="checkbox" checked>
+      <label for="checkbox1"></label>
+      我已阅读并同意<a style="color: #FC4349" target="_blank" href="about.php-action=terms.htm" tppabs="http://www.yituw.com/about.php?action=terms">《服务条款》</a>
+    </div>
+    
+    <div class="mt40 btn">
+      <a href="javascript:ajax_register()">提交</a>
+    </div>  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="xj_wap" class="d_none">
+  <div class="xj_wap">
+    <input type="text" class="ui_input" name="collect_add_title" id="collect_add_title" value="" placeholder="收藏夹名称" />
+  </div>
+</div>
+
+
+<div id="share_wap" class="d_none">
+  <div class="share_wrap">
+    <ul>
+      <li class="n1">
+        <a href="#">
+          <div class="ico">
+            
+          </div>
+          <h4>链接分享</h4>
+        </a>
+      </li>
+      <li class="n2">
+        <a href="javascript:if(confirm(%27http://connect.qq.com/widget/shareqq/index.html?url=&title=&pics=&summary=  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://connect.qq.com/widget/shareqq/index.html?url=&title=&pics=&summary=%27" tppabs="http://connect.qq.com/widget/shareqq/index.html?url=&title=&pics=&summary=" target="_blank">
+          <div class="ico">
+          
+          </div>
+          <h4>发给QQ好友</h4>
+        </a>
+      </li>
+    </ul>
+    <div class="foot">
+      <h3>下面是本收藏夹的地址</h3>
+      <input type="text" class="ui_input" name="" id="" value="http://www.yituw.com/collects.php?sid=" />
+    </div>
+  </div>
+</div>
+
+
+<div id="cmm_wrp" class="d_none">
+  <div class="cmm_wap">
+    <input type="text" class="ui_input cmm_value" name="" id="" value="" placeholder="新的收藏夹名称" />
+  </div>
+</div>
+
+
+<div id="del_authorized" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">确定要删除用户授权码吗？</h4>
+  </div>
+</div>
+
+<div id="del_wap" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">确定要删除收藏夹吗？</h4>
+  </div>
+</div>
+
+<div id="del_goods_wap" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">确定要删除选择的素材吗？</h4>
+  </div>
+</div>
+
+<div id="del_cart_good" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">确定要删除素材吗？</h4>
+  </div>
+</div>
+
+<div id="del_cart_goods" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">确定要删除所选素材吗？</h4>
+  </div>
+</div>
+
+
+<div id="transfer_wap" class="d_none">
+  <div class="transfer_wap">
+    <ul class="transfer" style="height: 200px; overflow: auto;">
+        </ul>
+  </div>
+</div>
+
+
+<div id="transf_wap" class="d_none">
+  <div class="transfer_wap">
+    <ul class="transfer">
+
+      <li class="c1"><a href="#">文艺小清新</a></li>
+      <li class="last"><a href="#">商务建筑大楼俯视图</a></li>
+    </ul>
+    <input type="text" class="ui_input" name="" id="" value="" placeholder="新建收藏夹" />
+  </div>
+</div>
+
+
+<div id="cancel_wap" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">是否取消下载图片？</h4>
+  </div>
+</div>
+
+
+<div id="invoice_wap" class="d_none">
+  <div class="invoice_wap">
+    <h4 class="del_txt">您的发票申请已提交至后台，发票开出后将第一时间寄送给您，请耐心等待！？</h4>
+  </div>
+</div>
+
+
+<div id="imgupload_wap" class="d_none">
+  <div class="imgupload_wap">
+    <h4 >恭喜您，您上传的文件已成功提交审核。</h4>
+    <h4 >通过审核后将以系统消息的形式通知您，请您随时关注个人中心的系统消息，耐心等待！</h4>
+  </div>
+</div>
+
+<div id="withdrawal_wap" class="d_none">
+  <div class="imgupload_wap">
+    <h4 >恭喜您，您的提现申请信息已提交至后台，</h4>
+    <h4 >提现成功后将以系统消息的形式通知您，请及时关注后台系统消息并耐心等待！</h4>
+  </div>
+</div>
+
+<div id="repeat_wap" class="d_none">
+  <div class="invoice_wap">
+    <h4 class="del_txt">已购买过的图片不能重复加入购物车，您可以在下载记录里直接下载！</h4>
+  </div>
+</div>
+
+<div id="cancelorder_wap" class="d_none">
+  <div class="del_wap">
+    <h4 class="del_txt">是否要取消此订单？</h4>
+  </div>
+</div>
+
+
+
+<div id="picture_wap" class="d_none">
+  <div class="picture_wap">
+    <div class="items">
+      <h4>标题</h4>
+      <p>标题用一句话准确描述的图片或者文件画面呈现出的主要内容，不要使用标点符号</p>
+      <p>标题包含画面的主要元素、动作、特征更利于搜索</p>
+    </div>
+    <div class="items">
+      <h4>标签</h4>
+      <p>When，时间，图片中明确表明的时间，以及节日，早晨、夜晚，端午、圣诞等等</p>
+      <p>Where，地点，从大到小的顺序编写，如亚洲，中国，北京，天安门</p>
+      <p>What，事物，画面中主要的具体物体，材质，数量和排列组合方式</p>
+      <p>Who，人物，人物的年龄，儿童、青年、老人，身份，如白领，教师，医生</p>
+      <p>How，如何，画面的动作，情绪，表达的概念、意图</p>
+      <p>Why，何因，图片如何创作，光线，拍摄角度，特别突出的颜色，表现方式</p>
+    </div>
+    
+    <div class="items">
+      <h4>注意事项</h4>
+      <p>同一场景不同角度的摆拍如静物类摄影，允许标签标签局部复制，其他内容明显有</p>
+      <p>区别的图片，标题标签全部复制将无法通过审核</p>
+      <p>不要为增加图片曝光填写与画面内容无关的标签，错误的关键词无法通过审核</p>
+    </div>
+    
+    <div class="items">
+      <h4>举例</h4>
+      <p>标题：年轻游客和他的狗在坐在通往山中的小路上看日出</p>
+      <img src="themes/meisu2017/imgs/img106.jpg" tppabs="http://www.yituw.com/themes/meisu2017/imgs/img106.jpg"/>
+    </div>
+  </div>
+  <div class="picture_foot">
+    <a href="#" class="ui_btn">明白了，马上去编辑</a>
+  </div>
+</div>
+
+
+
+
+<div id="pay_wrap" class="d_none">
+  <div class="pay_wrap">
+    <em></em>
+    <div class="head">
+      <span class='line'></span>
+      <h2>支付宝扫码完成支付</h2>
+    </div>
+    <p class='money'>￥399</p>
+    <div class="ma">
+      <img src="themes/meisu2017/imgs/lf2.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/lf2.png" alt="" />
+    </div>
+    <p class='money1'>支付宝网页支付</p>
+    <div class="foot">
+      <a href="">使用其他方式支付</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="pay_wrap" class="d_none">
+  <div class="pay_wrap">
+    <em></em>
+    <div class="head">
+      <span class='line'></span>
+      <h2>微信扫码完成支付</h2>
+    </div>
+    <p class='money'>￥10000000</p>
+    <div class="ma">
+      <img src="themes/meisu2017/imgs/lf2.png" tppabs="http://www.yituw.com/themes/meisu2017/imgs/lf2.png" alt="" />
+    </div>
+    <div class="foot wx">
+      <a href="">使用其他方式支付</a>
+    </div>
+  </div>
+</div>
+<div class="sidebar">
+  <ul>
+    <a href="flow.php.htm" tppabs="http://www.yituw.com/flow.php">
+      <li class='n1'></li>
+    </a>
+    <a href="user.php-act=collection_list.htm" tppabs="http://www.yituw.com/user.php?act=collection_list">
+      <li class='n2'></li>
+    </a>
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')">
+      <li class='n3' title="在线咨询"></li>
+    </a>
+    <a href="#all_toper">
+      <li class='n4'></li>
+    </a>
+  </ul>
+</div>
+
+<div id="authorization" class="d_none">
+  <div class="transfer_wap_n">
+    <input type="text" class="ui_input" name="authorized_name" id="authorized_name" value="" placeholder="被授权用户的公司全称" maxlength="50" autocomplete="off" />
+  </div>
+</div>
+
+
+<div id="forward_wap" class="d_none">
+  <div class="forward_wap">
+    <h4 class="del_txt">我们的图片购买功能还没正式开放哦，为表示歉意，奉上7折优惠码一枚。请您8月份再来体验！</h4>
+    <div class="body">
+      <ul>
+        <li><input type="text" name="forward_tel" class="txt txt01" id="forward_tel" value="ceshi" placeholder="手机号"  disabled="" autocomplete="off"/>
+        <li><input type="text" name="forward_name" class="txt" id="forward_name" value="" placeholder="姓名或公司名称" autocomplete="off"/></li>
+        <li><input type="text" name="forward_mail" class="txt" id="forward_mail" value="" placeholder="邮箱" autocomplete="off"/></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="transfer_wap_n" class="d_none">
+  <div class="transfer_wap_n"  >
+     <div style="margin: 0 auto;text-align: center;">
+    <input type="text" class="ui_input" name="" id="collect_add_title_yd" maxlength="20" value="" placeholder="新建收藏夹" autocomplete="off"/>
+    </div>
+  </div>
+</div>
+<div id="profile_avatar" style="display: none;">
+  <div class="profile_avatar_wrap">
+  <form id="ECS_PROFILE_AVATAR" name="ECS_PROFILE_AVATAR" action="http://www.yituw.com/user.php" method="post" enctype="multipart/form-data">
+             <div class="body" style="" >
+          <div class="upload">
+            <div class="ico">
+            </div>
+            <h4>选择图片</h4>
+            <input type="hidden" name="upload_avatar" value="1" />
+            <input type="file" name="avatar" class="file"  id="" value="" onchange="this.form.submit();"/>
+          </div>  
+       </div>
+
+       </form>     
+  </div>
+</div>
+<div id="attorney" class="d_none">
+  <div class="attorney">
+    <select class="dropdown" >
+           <option value="" class="label"></option>
+           <option value="北京意优创意科技有限公司" class="label">北京意优创意科技有限公司</option>
+           <option value="北京广胜科技有限公司" >北京广胜科技有限公司</option>  
+           <option value="北京海伦科技有限公司" >北京海伦科技有限公司</option>    
+        </select>
+        <h4>新增用户自动保存</h4>
+  </div>
+</div>
+
+
+<div id="srchimg_wrap_fa" style="display: none;">
+  <div class="srchimg_wrap srchimg_wrap_fa">
+  
+       <div class="head">
+        <ul>
+            
+        </ul>     
+       </div>
+       <div class="body"  >        
+        <input type="submit" name="" id="fa_submit" class="btn" value="确定" onclick="" />      
+       </div>
+  </div>
+</div>
+
+<input type="hidden" id="hidden_reg_mobile_drag" value="">
+<script type="text/javascript" src="themes/meisu2017/js/jquery-1.7.2.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.json.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.json.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.glide.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.glide.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/layer.js" tppabs="http://www.yituw.com/themes/meisu2017/js/layer.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.easydropdown.min.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.easydropdown.min.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/WdatePicker.js" tppabs="http://www.yituw.com/themes/meisu2017/js/WdatePicker.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.poshytip.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.poshytip.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/jquery.row-grid-display.js" tppabs="http://www.yituw.com/themes/meisu2017/js/jquery.row-grid-display.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/template.js" tppabs="http://www.yituw.com/themes/meisu2017/js/template.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/XCheck.js" tppabs="http://www.yituw.com/themes/meisu2017/js/XCheck.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/script.js-aab.js" tppabs="http://www.yituw.com/themes/meisu2017/js/script.js?aab"></script>
+<script type="text/javascript" src="themes/meisu2017/js/dialog.js" tppabs="http://www.yituw.com/themes/meisu2017/js/dialog.js"></script>
+<script type="text/javascript" src="themes/meisu2017/js/gy.js" tppabs="http://www.yituw.com/themes/meisu2017/js/gy.js"></script>
+<script src="themes/meisu2017/three/drag.js" tppabs="http://www.yituw.com/themes/meisu2017/three/drag.js" type="text/javascript"></script>
+<script src="themes/meisu2017/js/photo.js" tppabs="http://www.yituw.com/themes/meisu2017/js/photo.js" type="text/javascript"></script>
+<!-- <script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=1245" async="async" defer="defer"></script> -->
+
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = '../static.meiqia.com/dist/meiqia.js-_=t.js'/*tpa=https://static.meiqia.com/dist/meiqia.js?_=t*/;
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 115890);
+</script></body>
+</html>
+
+
+<!-- $api_url = 'http://api.yituw.com:8080/login.php?formatType=array';
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_HEADER, 0);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    $login_json = curl_exec($curl);
+    curl_close($curl);
+    file_put_contents('./temp/session/id.txt', $login_json);
+    $dp_session_id = object2array($login_json);
+    $_SESSION['dp_session_id']='';
+    $_SESSION['dp_session_id']=$dp_session_id['sessionid'];
+
+    $api_param=array(
+                "dp_session_id"=>$dp_session_id['sessionid'],
+                "dp_media_id"=>$goods_sn,
+                "dp_media_option"=>$goods_size,
+                "dp_media_license"=>'standard',
+                "dp_purchase_currency"=>'subscription',
+                "dp_subaccount_id"=>'12239234',//子账户ID，如果是多子账户同时使用请另实现
+            );
+    $down_json = api_curl('getMedia',$api_param);
+
+    $down_array = json_decode($down_json,true);
+    //var_dump($down_array);exit;
+    //exit;
+    $downloadLink = $down_array['downloadLink'];
+    $api_param_down = array(
+        "downloadLink"=> $downloadLink,
+        "goods_sn"=>$goods_sn,
+        "goods_size"=>$goods_size
+
+    );
+
+    //print_r($api_param_down);exit;
+//exit('here');
+    $getImg_url = api_curl_down("getImg",$api_param_down);
+    // echo $downloadLink;
+    // echo $getImg_url;exit;
+    ecs_header("Location: ".$getImg_url."\n");
+    exit;
+
+    //获取session_id
+    //下载时默认进行登录， 默认之前的session_id已经失效
+    $api_url = 'http://api.yituw.com:8080/login.php?formatType=array';
+     $curl = curl_init();
+     curl_setopt($curl, CURLOPT_URL, $api_url);
+     curl_setopt($curl, CURLOPT_HEADER, 0);
+     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    $login_json = curl_exec($curl);
+    curl_close($curl);
+    file_put_contents('./temp/session/id.txt', $login_json);
+    $dp_session_id = object2array($login_json);
+    $_SESSION['dp_session_id']='';
+    $_SESSION['dp_session_id']=$dp_session_id['sessionid'];
+
+    $api_param=array(
+                "dp_session_id"=>$dp_session_id['sessionid'],
+                "dp_media_id"=>$goods_sn,
+                "dp_media_option"=>$goods_size,
+                "dp_media_license"=>'standard',
+                "dp_purchase_currency"=>'subscription',
+                "dp_subaccount_id"=>'12239234',//子账户ID，如果是多子账户同时使用请另实现
+            );
+    $down_json = api_curl('getMedia',$api_param);
+    $a = json_decode($down_json,true);
+    //print_r($a);exit;
+    ecs_header("Location: ".$a['downloadLink']."\n");
+    exit; -->
